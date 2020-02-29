@@ -8,7 +8,110 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <!--Main Grid-->
+    <Grid Name="OuterGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Options Menu Grid-->
+        <Grid x:Name="mainOptionsMenuGrid" Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <TextBlock> Buttons and split view menu go here</TextBlock>
+        </Grid>
+        <!--Outer Shows Menu Grid-->
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
 
+            <!--Shows title bar Grid-->
+            <Grid x:Name="showsTitleBarGrid" Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <ComboBox Width="200" HorizontalAlignment="Center" Margin="50" SelectedItem="All" Grid.Row="0" Grid.Column="0">
+                    <x:String>All</x:String>
+                    <x:String>Comedy</x:String>
+                    <x:String>Crime</x:String>
+                    <x:String>Drama</x:String>
+                    <x:String>Sci-Fi</x:String>
+                    <x:String>Thriller</x:String>
+                </ComboBox>
+                <TextBlock FontSize="50" HorizontalAlignment="Center" Margin="20" Grid.Row="0" Grid.Column="1">Tv Series</TextBlock>
+                <RadioButton Content="Sort by Rating" Tag="ratingSort" Name="rbSortRating" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="3" FontSize="12"/>
+                <RadioButton Content="Sort by Year" Tag="yearSort" Name="rbSortYear" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="2" FontSize="12"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                
+                <Button Name="BtnAOS" Grid.Row="0" Grid.Column="0">
+                    <Image Source="ms-appx:///Images/AOS1.jpg" Stretch="Fill"></Image>
+                </Button>
+                <Button Name="BtnTravelers" Grid.Row="0" Grid.Column="1">
+                    <Image Source="ms-appx:///Images/trav1.jpg" Stretch="Fill"></Image>
+                </Button>
+                <Button Name="BtnKE" Grid.Row="0" Grid.Column="2">
+                    <Image Source="ms-appx:///Images/ke1.jpg" Stretch="Fill"></Image>
+                </Button>
+
+                
+                <Button Name="BtnNikita" Grid.Row="1" Grid.Column="0">
+                    <Image Source="ms-appx:///Images/nikita1.jpg" Stretch="Fill"></Image>
+                </Button>
+                <Button Name="BtnOB" Grid.Row="1" Grid.Column="1">
+                    <Image Source="ms-appx:///Images/orphanBlack1.jpg" Stretch="Fill"></Image>
+                </Button>
+                <Button Name="BtnB99" Grid.Row="1" Grid.Column="2">
+                    <Image Source="ms-appx:///Images/b991.jpg" Stretch="Fill"></Image>
+                </Button>
+
+                
+                <Button Name="BtnYou" Grid.Row="2" Grid.Column="0">
+                    <Image Source="ms-appx:///Images/you1.jpg" Stretch="Fill"></Image>
+                </Button>
+                <Button Name="BtnBRBA" Grid.Row="2" Grid.Column="1">
+                    <Image Source="ms-appx:///Images/brba1.jpg" Stretch="Fill"></Image>
+                </Button>
+                <Button Name="BtnSH" Grid.Row="2" Grid.Column="2">
+                    <Image Source="ms-appx:///Images/sh1.jpg" Stretch="Fill"></Image>
+                </Button>
+                
+                
+                <Button Name="Btn12M" Grid.Row="3" Grid.Column="0">
+                    <Image Source="ms-appx:///Images/12Monkeys1.jpg" Stretch="Fill"></Image>
+                </Button>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>

@@ -23,13 +23,84 @@ namespace Sem_6_CA1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        List<TV_Show> shows = new List<TV_Show>();
+        TV_Show aos;
+        TV_Show travelers;
+        TV_Show killingEve;
+        TV_Show nikitaShow;
+        TV_Show orphanBlack;
+        TV_Show b99;
+        TV_Show you;
+        TV_Show brba;
+        TV_Show shadowhunters;
+        TV_Show twelveMonkeys;
+
         public MainPage()
         {
             this.InitializeComponent();
-            setTVShowDetails();
+            SetTVShowDetails();
+            AddShowsToList();
+            SetButtonToolTips();
         }
 
-        public void setTVShowDetails()
+        public void SetButtonToolTips()
+        {
+            ToolTip toolTipAOS = new ToolTip();
+            toolTipAOS.Content = shows[0].Title + " (" + shows[0].YearOfShow + ")" + "\n\n" + shows[0].Synopsis;
+            ToolTipService.SetToolTip(BtnAOS, toolTipAOS);
+
+            ToolTip toolTipTrav = new ToolTip();
+            toolTipTrav.Content = shows[1].Title + " (" + shows[1].YearOfShow + ")" + "\n\n" + shows[1].Synopsis;
+            ToolTipService.SetToolTip(BtnTravelers, toolTipTrav);
+
+            ToolTip toolTipKE = new ToolTip();
+            toolTipKE.Content = shows[2].Title + " (" + shows[2].YearOfShow + ")" + "\n\n" + shows[2].Synopsis;
+            ToolTipService.SetToolTip(BtnKE, toolTipKE);
+
+            ToolTip toolTipNik = new ToolTip();
+            toolTipNik.Content = shows[3].Title + " (" + shows[3].YearOfShow + ")" + "\n\n" + shows[3].Synopsis;
+            ToolTipService.SetToolTip(BtnNikita, toolTipNik);
+
+            ToolTip toolTipOB = new ToolTip();
+            toolTipOB.Content = shows[4].Title + " (" + shows[4].YearOfShow + ")" + "\n\n" + shows[4].Synopsis;
+            ToolTipService.SetToolTip(BtnOB, toolTipOB);
+
+            ToolTip toolTipB99 = new ToolTip();
+            toolTipB99.Content = shows[5].Title + " (" + shows[5].YearOfShow + ")" + "\n\n" + shows[5].Synopsis;
+            ToolTipService.SetToolTip(BtnB99, toolTipB99);
+
+            ToolTip toolTipYou = new ToolTip();
+            toolTipYou.Content = shows[6].Title + " (" + shows[6].YearOfShow + ")" + "\n\n" + shows[6].Synopsis;
+            ToolTipService.SetToolTip(BtnYou, toolTipYou);
+
+            ToolTip toolTipBrba = new ToolTip();
+            toolTipBrba.Content = shows[7].Title + " (" + shows[7].YearOfShow + ")" + "\n\n" + shows[7].Synopsis;
+            ToolTipService.SetToolTip(BtnBRBA, toolTipBrba);
+
+            ToolTip toolTipSH = new ToolTip();
+            toolTipSH.Content = shows[8].Title + " (" + shows[8].YearOfShow + ")" + "\n\n" + shows[8].Synopsis;
+            ToolTipService.SetToolTip(BtnSH, toolTipSH);
+
+            ToolTip toolTip12M = new ToolTip();
+            toolTip12M.Content = shows[9].Title + " (" + shows[9].YearOfShow + ")" + "\n\n" + shows[9].Synopsis;
+            ToolTipService.SetToolTip(Btn12M, toolTip12M);
+        }
+
+        public void AddShowsToList()
+        {
+            shows.Add(aos);
+            shows.Add(travelers);
+            shows.Add(killingEve);
+            shows.Add(nikitaShow);
+            shows.Add(orphanBlack);
+            shows.Add(b99);
+            shows.Add(you);
+            shows.Add(brba);
+            shows.Add(shadowhunters);
+            shows.Add(twelveMonkeys);
+        }
+
+        public void SetTVShowDetails()
         {
             //AOS Cast Roles
             CastRole simmons = new CastRole("Jemma Simmons", "2013-2020");
@@ -57,15 +128,15 @@ namespace Sem_6_CA1
                 "was born Chloe Wang in Chicago, Illinois.Her father is Han Chinese and her mother is Caucasian American. ", 4,
                 "https://www.imdb.com/name/nm4032297/?ref_=ttfc_fc_cl_t3");
 
-            TV_Show AOS = new TV_Show("Agents of S.H.I.E.L.D", aOSImage, "2013", "Sci-Fi", "ABC", "Fridays @ 8pm", 
+            aos = new TV_Show("Agents of S.H.I.E.L.D", aOSImage, "2013", "Sci-Fi", "ABC", "Fridays @ 8pm", 
                 "Phil Coulson of the Strategic Homeland Intervention, Enforcement and Logistics Division " +
                 "assembles an elite covert team to find and deal with these threats wherever they are found. " +
                 "With a world rapidly becoming more bizarre and dangerous than ever before as the supervillains arise, " +
                 "these agents of S.H.I.E.L.D. are ready to take them on.");
 
-            AOS.AddCastMember(elizabeth);
-            AOS.AddCastMember(iain);
-            AOS.AddCastMember(chloe);
+            aos.AddCastMember(elizabeth);
+            aos.AddCastMember(iain);
+            aos.AddCastMember(chloe);
 
             //Travelers
             CastRole marcy = new CastRole("Marcy Warton", "2016-2018");
@@ -92,7 +163,7 @@ namespace Sem_6_CA1
                 "known for her work on The Edge of Seventeen(2016), #REALITYHIGH (2017) and Travelers (2016).", 5,
                 "https://www.imdb.com/name/nm5050435/?ref_=tt_cl_t3");
 
-            TV_Show travelers = new TV_Show("Travelers", travImage, "2013", "Sci-Fi", "Netflix", "Ended",
+            travelers = new TV_Show("Travelers", travImage, "2013", "Sci-Fi", "Netflix", "Ended",
                 "Hundreds of years from now, surviving humans discover how to send consciousness back through time, " +
                 "into people of the 21st century, while attempting to change the path of humanity.");
 
@@ -125,7 +196,7 @@ namespace Sem_6_CA1
                 "Jenkins (2016). ", 3,
                 "https://www.imdb.com/name/nm5050435/?ref_=tt_cl_t3");
 
-            TV_Show killingEve = new TV_Show("Killing Eve", keImage, "2018", "Thriller", "BBC", "Wednesdays @ 9pm",
+            killingEve = new TV_Show("Killing Eve", keImage, "2018", "Thriller", "BBC", "Wednesdays @ 9pm",
                 "After a series of events, the lives of a security operative and an assassin become inextricably linked.");
 
             travelers.AddCastMember(sandra);
@@ -160,7 +231,7 @@ namespace Sem_6_CA1
                 "first runner-up for 'Miss Barbizon Young Miss Talent of the Year'.", 5,
                 "https://www.imdb.com/name/nm0960912/?ref_=tt_cl_t3");
 
-            TV_Show nikitaShow = new TV_Show("Nikita", nikitaImage, "2010", "Action", "The CW", "Ended",
+            nikitaShow = new TV_Show("Nikita", nikitaImage, "2010", "Action", "The CW", "Ended",
                 "A rogue assassin returns to take down the secret organization that trained her.");
 
             nikitaShow.AddCastMember(maggie);
@@ -183,7 +254,7 @@ namespace Sem_6_CA1
                 "https://www.imdb.com/name/nm1137209/?ref_=tt_ov_st_sm");
 
 
-            TV_Show orphanBlack = new TV_Show("Nikita", orphanBlackImage, "2013", "Action", "BBC America", "Ended",
+            orphanBlack = new TV_Show("Orphan Black", orphanBlackImage, "2013", "Thriller", "BBC America", "Ended",
                 "A streetwise hustler is pulled into a compelling conspiracy after witnessing the suicide" +
                 " of a girl who looks just like her.");
 
@@ -215,7 +286,7 @@ namespace Sem_6_CA1
             "married to Brad Hoss since October 6, 2018. ", 5,
             "https://www.imdb.com/name/nm3715867/?ref_=tt_cl_t2");
 
-            TV_Show b99 = new TV_Show("Brooklyn Nine-Nine", b99Image, "2013", "Comedy", "NBC", "Thursdays @ 7pm",
+            b99 = new TV_Show("Brooklyn Nine-Nine", b99Image, "2013", "Comedy", "NBC", "Thursdays @ 7pm",
                 "Jake Peralta, an immature, but talented N.Y.P.D. detective in Brooklyn's 99th Precinct, comes " +
                 "into immediate conflict with his new commanding officer, the serious and stern Captain Ray Holt.");
 
@@ -248,13 +319,49 @@ namespace Sem_6_CA1
            "James Scully is an actor, known for Heathers (2018), You (2018) and Straight Up (2019).", 4,
            "https://www.imdb.com/name/nm8510480/?ref_=tt_cl_t8");
 
-            TV_Show you = new TV_Show("You", youImage, "2018", "Thriller", "Netflix", "Tuesdays @ 10pm",
+            you = new TV_Show("You", youImage, "2018", "Thriller", "Netflix", "Tuesdays @ 10pm",
                 "A dangerously charming, intensely obsessive young man goes to extreme measures to insert " +
                 "himself into the lives of those he is transfixed by.");
 
             you.AddCastMember(penn);
             you.AddCastMember(victoria);
             you.AddCastMember(james);
+
+            //Breaking Bad
+            CastRole jesse = new CastRole("Jesse Pinkman", "2008-2013");
+            CastRole walt = new CastRole("Walter White", "2008-2013");
+            CastRole saul = new CastRole("Saul Goodman", "2009-2013");
+
+            BitmapImage brbaImage = new BitmapImage();
+            travImage.UriSource = new Uri("ms-appx:///Images/brba.jpg");
+
+            //Breaking Bad Cast Members
+            CastMember aaronP = new CastMember(new Name("Aaron", "Paul"), new DateTime(1979, 08, 27), jesse,
+                "Aaron Paul was born Aaron Paul Sturtevant in Emmett, Idaho, to Darla (Haynes) and Robert Sturtevant, " +
+                "a retired Baptist minister. While growing up, Paul took part in church programs, and performed in plays. " +
+                "He attended Centennial High School in Boise, Idaho. It was there, in eighth grade, that Aaron decided he " +
+                "wanted to become an actor. ", 5,
+                "https://www.imdb.com/name/nm0666739/?ref_=tt_cl_t3");
+
+            CastMember bryan = new CastMember(new Name("Bryan", "Cranston"), new DateTime(1956, 03, 07), walt,
+           "Bryan Lee Cranston was born on March 7, 1956 in Hollywood, California, to Audrey Peggy Sell, a radio actress, " +
+           "and Joe Cranston, an actor and former amateur boxer. His maternal grandparents were German, and his father was of " +
+           "Irish, German, and Austrian-Jewish ancestry. ", 5,
+           "https://www.imdb.com/name/nm0186505/?ref_=tt_cl_t1");
+
+            CastMember bobO = new CastMember(new Name("Bob", "Odenkirk"), new DateTime(1962, 10, 26), saul,
+           "Robert John Odenkirk was born in Berwyn, Illinois, to Barbara (Baier) and Walter Odenkirk, who worked in " +
+           "printing. His ancestry includes German and Irish. He grew up in Naperville, IL, the second of seven children. " +
+           "He worked as a DJ for WIDB, his college radio station at Southern Illinois University Carbondale. ", 1,
+           "https://www.imdb.com/name/nm0644022/?ref_=tt_cl_t7");
+
+            brba = new TV_Show("Breaking Bad", brbaImage, "2008", "Thriller", "Freeform", "Ended",
+                "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing " +
+                "and selling methamphetamine in order to secure his family's future.");
+
+            brba.AddCastMember(aaronP);
+            brba.AddCastMember(bryan);
+            brba.AddCastMember(bobO);
 
             //Shadowhunters
             CastRole alec = new CastRole("Alec Lightwood", "2016-2019");
@@ -283,13 +390,50 @@ namespace Sem_6_CA1
            "returning to London. ", 1,
            "https://www.imdb.com/name/nm8510480/?ref_=tt_cl_t8");
 
-            TV_Show shadowhunters = new TV_Show("Shadowhunters", shImage, "2016", "Fantasy", "Freeform", "Ended",
+            shadowhunters = new TV_Show("Shadowhunters", shImage, "2016", "Fantasy", "Freeform", "Ended",
                 "After her mother disappears, Clary must venture into the dark world of demon " +
                 "hunting, and embrace her new role among the Shadowhunters.");
 
             shadowhunters.AddCastMember(matt);
             shadowhunters.AddCastMember(kat);
             shadowhunters.AddCastMember(dom);
+
+            //12 Monkeys
+
+            CastRole cole = new CastRole("James Cole", "2015-2018");
+            CastRole cassie = new CastRole("Cassandra Railly", "2015-2018");
+            CastRole jennifer = new CastRole("Jennifer Goines", "2015-2018");
+
+            BitmapImage twelveM = new BitmapImage();
+            twelveM.UriSource = new Uri("ms-appx:///Images/12Monkeys.jpg");
+
+            //12 Monkeys Cast Members
+
+            CastMember aaronS = new CastMember(new Name("Aaron", "Stanford"), new DateTime(1976, 12, 27), cole,
+                "An actor who consistently brings intensity and intelligence to his work, Aaron Stanford is poised " +
+                "to become one of the foremost talents of his generation. Aaron received critical acclaim for his " +
+                "feature film debut in _Tadpole_ opposite Sigourney Weaver and Bebe Neuwirth. Since that breakout " +
+                "performance, he has continued to tackle a variety of roles.", 5,
+                "https://www.imdb.com/name/nm0822155/?ref_=nmbio_bio_nm");
+
+            CastMember amanda = new CastMember(new Name("Amanda", "Schull"), new DateTime(1978, 8, 26), cassie,
+           "Amanda Schull was born on August 26, 1978 in Honolulu, Hawaii, USA. She is an actress, known for 12 Monkeys (2015), Suits (2011) and Pretty Little Liars (2010).", 3,
+           "https://www.imdb.com/name/nm0776040/?ref_=tt_ov_st_sm");
+
+            CastMember emily = new CastMember(new Name("Emily", "Hampshire"), new DateTime(1981, 8, 29), jennifer,
+           "Born and raised in Montreal, Emily Hampshire has made an indelible mark on the Canadian film and television industry " +
+           "in a relatively short period of time. Her work has been recognized by the Canadian Academy of Cinema and Television with " +
+           "3 Genie Award Nominations, a Gemini Award for her work on the small screen and was chosen by her peers in the Canadian " +
+           "Actors Guild as a nominee for 'Outstanding Female Performance' at the ACTRA Awards.", 5,
+           "https://www.imdb.com/name/nm0358922/?ref_=nmbio_bio_nm");
+
+            twelveMonkeys = new TV_Show("12 Monkeys", twelveM, "2015", "Sci-Fi", "SyFy", "Ended",
+                "Follows the journey of a time traveler from the post-apocalyptic future who appears in present day " +
+                "on a mission to locate and eradicate the source of a deadly plague that will nearly destroy the human race.");
+
+            twelveMonkeys.AddCastMember(aaronS);
+            twelveMonkeys.AddCastMember(amanda);
+            twelveMonkeys.AddCastMember(emily);           
         }
     }
 }
