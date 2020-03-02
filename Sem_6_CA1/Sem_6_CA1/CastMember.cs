@@ -10,7 +10,12 @@ namespace Sem_6_CA1
     {
         public CastMember()
         {
-
+            Name = new Name("Default", "Name");
+            DOB = new DateTime();
+            Role = new CastRole();
+            MiniBio = "";
+            StarRating = 0;
+            IMDB = "";
         }
 
         public CastMember(Name name, DateTime dob, CastRole role, String miniBio, int starRating, String imdb) : base(name, dob)

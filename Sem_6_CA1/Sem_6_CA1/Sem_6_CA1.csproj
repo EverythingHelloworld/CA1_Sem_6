@@ -136,16 +136,16 @@
     <None Include="Sem_6_CA1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\12Monkeys1.jpg" />
-    <Content Include="Images\AOS1.jpg" />
-    <Content Include="Images\b991.jpg" />
-    <Content Include="Images\brba1.jpg" />
-    <Content Include="Images\ke1.jpg" />
-    <Content Include="Images\nikita1.jpg" />
-    <Content Include="Images\orphanBlack1.jpg" />
-    <Content Include="Images\sh1.jpg" />
-    <Content Include="Images\trav1.jpg" />
-    <Content Include="Images\you1.jpg" />
+    <Content Include="Images\12Monkeys.jpg" />
+    <Content Include="Images\AOS.jpg" />
+    <Content Include="Images\b99.jpg" />
+    <Content Include="Images\brba.jpg" />
+    <Content Include="Images\ke.jpg" />
+    <Content Include="Images\nikita.jpg" />
+    <Content Include="Images\orphanBlack.jpg" />
+    <Content Include="Images\sh.jpg" />
+    <Content Include="Images\trav.jpg" />
+    <Content Include="Images\you.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

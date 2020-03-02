@@ -18,26 +18,28 @@ namespace Sem_6_CA1
             CastList = new List<CastMember>();
         }
 
-        public TV_Show(String title, BitmapImage showImage, String yearOfShow, String genre, 
-            String channel, String screeningTime, String synopsis)
+        public TV_Show(String title, String showImageString, String yearOfShow, String genre, 
+            String channel, String screeningTime, String synopsis, int showRating)
         {
             castMembers = new List<CastMember>();
             Title = title;
-            ShowImage = showImage;
+            ShowImageString = showImageString;
             Genre = genre;
             YearOfShow = yearOfShow;
             Channel = channel;
             ScreeningTime = screeningTime;
             Synopsis = synopsis;
+            ShowRating = showRating;
         }
 
         public String Title { get; set; }
-        public BitmapImage ShowImage { get; set; }
+        public String ShowImageString { get; set; }
         public String Genre { get; set; }
         public String YearOfShow { get; set; }
         public String Channel { get; set; }
         public String ScreeningTime { get; set; }
         public String Synopsis { get; set; }
+        public int ShowRating { get; set; }
         public List<CastMember> CastList { get; set; }
 
         public void AddCastMember(CastMember castMem)

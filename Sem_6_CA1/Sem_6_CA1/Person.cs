@@ -10,7 +10,8 @@ namespace Sem_6_CA1
     {
         public Person()
         {
-
+            Name = new Name("Default","Name");
+            DOB = new DateTime();
         }
 
         public Person(Name name, DateTime dob)
