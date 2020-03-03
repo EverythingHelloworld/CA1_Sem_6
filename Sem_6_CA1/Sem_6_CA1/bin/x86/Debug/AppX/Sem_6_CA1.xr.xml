@@ -31,6 +31,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Margin" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -86,6 +87,7 @@
       <RootProperty Name="Icon" />
       <RootProperty Name="Content" />
       <RootProperty Name="Tag" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Sem_6_CA1.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">

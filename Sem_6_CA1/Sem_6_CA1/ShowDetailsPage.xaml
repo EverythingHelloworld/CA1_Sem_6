@@ -11,8 +11,8 @@
     <!--Main Page Grid-->
     <Grid x:Name="OuterGrid">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -20,9 +20,9 @@
 
         <NavigationView PaneDisplayMode="LeftMinimal" SelectedItem="Home" x:Name="OptionsMenu">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" />
-                <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels"/>
-                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" />
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" FontSize="20"/>
+                <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels" FontSize="20"/>
+                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" FontSize="20"/>
             </NavigationView.MenuItems>
         </NavigationView>
 
@@ -59,8 +59,8 @@
                     <RowDefinition Height="10*"/>
                     <RowDefinition Height="*"/> 
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0" Grid.Column="0">
@@ -81,7 +81,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <TextBlock x:Name="channel" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap"></TextBlock>
-                    <TextBlock x:Name="screeningTime" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock x:Name="screeningTime" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Right"></TextBlock>
                 </Grid>
                 <TextBlock Grid.Row="2" Grid.Column="0" FontSize="24">Show Synopsis:</TextBlock>
                 <TextBlock x:Name="synopsis" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" TextAlignment="Justify"></TextBlock>
@@ -95,7 +95,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Button Name="playButton" Grid.Row="1" Grid.Column="1" Background="Transparent" Click="playButton_Click">
+                    <Button Name="playButton" Grid.Row="1" Grid.Column="1" Background="Transparent" Click="playButton_Click" ToolTipService.ToolTip="Play Trailer">
                         <Viewbox MaxHeight="100" MaxWidth="200">
                             <SymbolIcon Symbol="Play" RenderTransformOrigin="1.6,1.6"/>
                         </Viewbox>
@@ -103,11 +103,11 @@
                 </Grid>
             </Grid>
 
-            <GridView x:Name="castGrid" Grid.Column="1" Grid.Row="1">
+            <GridView Margin="20,0,0,0" x:Name="castGrid" Grid.Column="1" Grid.Row="1">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="local:CastMember">
                         <StackPanel Margin="10" Width="Auto">
-                            <Image Height="250" Width="400" Stretch="Fill" Source="{x:Bind ImageSource}">
+                            <Image Height="500" Width="500" Stretch="Fill" Source="{x:Bind ImageSource}">
                                 <ToolTipService.ToolTip>
                                     <TextBlock>
                                        <Run Text="{x:Bind Name}"/>

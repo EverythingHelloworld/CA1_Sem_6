@@ -100,6 +100,9 @@
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\ke.jpg">
       <PackagePath>Images\ke.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\lynsey.jpg">
+      <PackagePath>Images\lynsey.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\mackenzie.jpg">
       <PackagePath>Images\mackenzie.jpg</PackagePath>
     </AppxPackagedFile>

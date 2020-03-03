@@ -11,17 +11,16 @@ namespace Sem_6_CA1
 {
     public class TV_Show
     {
-        private List<CastMember> castMembers;
+        private List<CastMember> castMembers = new List<CastMember>();
 
         public TV_Show()
         {
-            CastList = new List<CastMember>();
         }
 
         public TV_Show(String title, String showImageString, String yearOfShow, String genre, 
-            String channel, String screeningTime, String synopsis, int showRating, String trailerLink)
+            String channel, String screeningTime, String synopsis, int showRating, String trailerLink, List<CastMember> castList)
         {
-            castMembers = new List<CastMember>();
+            castMembers = castList;
             Title = title;
             ShowImageString = showImageString;
             Genre = genre;
@@ -42,7 +41,15 @@ namespace Sem_6_CA1
         public String ScreeningTime { get; set; }
         public String Synopsis { get; set; }
         public int ShowRating { get; set; }
-        public List<CastMember> CastList { get; set; }
+
+        public List<CastMember> GetCastMembers() {
+            return castMembers;
+        }
+
+        public void SetCastMembers(List<CastMember> castList)
+        {
+            castMembers = castList;
+        }
 
         public void AddCastMember(CastMember castMem)
         {

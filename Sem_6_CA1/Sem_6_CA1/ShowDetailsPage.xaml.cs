@@ -42,6 +42,11 @@ namespace Sem_6_CA1
             synopsis.Text = selectedShow.Synopsis;
             Image img = (Image)this.FindName("showImage");
             img.Source = new BitmapImage(new Uri(selectedShow.ShowImageString));
+            List<CastMember> castList = new List<CastMember>();
+            castList = selectedShow.GetCastMembers();
+            //foreach (CastMember c in castList)
+            //    Debug.WriteLine(c);
+            castGrid.ItemsSource = castList;
         }
         public async void playButton_Click(object sender, RoutedEventArgs e)
         {
