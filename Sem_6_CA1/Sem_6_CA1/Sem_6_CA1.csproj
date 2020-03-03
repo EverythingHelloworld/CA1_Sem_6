@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -127,6 +127,9 @@
     <Compile Include="Name.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowDetailsPage.xaml.cs">
+      <DependentUpon>ShowDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TV_Show.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,14 +140,42 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\12Monkeys.jpg" />
+    <Content Include="Images\aaron1.jpg" />
+    <Content Include="Images\aaron2.jpg" />
+    <Content Include="Images\aaron3.jpg" />
+    <Content Include="Images\alex.jpg" />
+    <Content Include="Images\amanda.jpg" />
+    <Content Include="Images\andy.jpg" />
     <Content Include="Images\AOS.jpg" />
     <Content Include="Images\b99.jpg" />
+    <Content Include="Images\bob.jpg" />
     <Content Include="Images\brba.jpg" />
+    <Content Include="Images\bryan.jpg" />
+    <Content Include="Images\chloe.jpg" />
+    <Content Include="Images\david.jpg" />
+    <Content Include="Images\dom.jpg" />
+    <Content Include="Images\elizabeth.jpg" />
+    <Content Include="Images\emily.jpg" />
+    <Content Include="Images\iain.jpg" />
+    <Content Include="Images\james.jpg" />
+    <Content Include="Images\jodie.jpg" />
+    <Content Include="Images\katherine.jpg" />
     <Content Include="Images\ke.jpg" />
+    <Content Include="Images\mackenzie.jpg" />
+    <Content Include="Images\maggie.jpg" />
+    <Content Include="Images\matt.jpg" />
+    <Content Include="Images\melissa.jpg" />
+    <Content Include="Images\nesta.jpg" />
     <Content Include="Images\nikita.jpg" />
     <Content Include="Images\orphanBlack.jpg" />
+    <Content Include="Images\penn.jpg" />
+    <Content Include="Images\reilly.jpg" />
+    <Content Include="Images\sandra.jpg" />
     <Content Include="Images\sh.jpg" />
+    <Content Include="Images\stephanie.jpg" />
+    <Content Include="Images\tatiana.jpg" />
     <Content Include="Images\trav.jpg" />
+    <Content Include="Images\victoria.jpg" />
     <Content Include="Images\you.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -163,6 +194,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ShowDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

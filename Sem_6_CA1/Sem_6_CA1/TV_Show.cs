@@ -19,7 +19,7 @@ namespace Sem_6_CA1
         }
 
         public TV_Show(String title, String showImageString, String yearOfShow, String genre, 
-            String channel, String screeningTime, String synopsis, int showRating)
+            String channel, String screeningTime, String synopsis, int showRating, String trailerLink)
         {
             castMembers = new List<CastMember>();
             Title = title;
@@ -30,11 +30,13 @@ namespace Sem_6_CA1
             ScreeningTime = screeningTime;
             Synopsis = synopsis;
             ShowRating = showRating;
+            TrailerLink = trailerLink;
         }
 
         public String Title { get; set; }
         public String ShowImageString { get; set; }
         public String Genre { get; set; }
+        public String TrailerLink { get; set; }
         public String YearOfShow { get; set; }
         public String Channel { get; set; }
         public String ScreeningTime { get; set; }

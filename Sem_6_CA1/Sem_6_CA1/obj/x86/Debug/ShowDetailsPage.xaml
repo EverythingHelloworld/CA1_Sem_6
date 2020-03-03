@@ -1,0 +1,127 @@
+﻿<Page
+    x:Class="Sem_6_CA1.ShowDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sem_6_CA1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--Main Page Grid-->
+    <Grid x:ConnectionId='2' x:Name="OuterGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <NavigationView x:ConnectionId='3' PaneDisplayMode="LeftMinimal" SelectedItem="Home" x:Name="OptionsMenu">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" />
+                <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels"/>
+                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+
+        <!--Outer Grid for title bar and shows-->
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <!--title bar Grid-->
+            <Grid x:ConnectionId='4' x:Name="showDetailTitleBarGrid" Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--Title-->
+                <TextBlock x:ConnectionId='15' x:Name="showTitle" FontSize="50" HorizontalAlignment="Center" Margin="20"></TextBlock>
+            </Grid>
+            <!--^Close title bar grid-->
+            <Grid Grid.Row="1" Grid.Column="0" Margin="20,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="*"/> 
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:ConnectionId='14' Name="showImage" Stretch="Fill"/>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:ConnectionId='12' x:Name="channel" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock x:ConnectionId='13' x:Name="screeningTime" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap"></TextBlock>
+                </Grid>
+                <TextBlock Grid.Row="2" Grid.Column="0" FontSize="24">Show Synopsis:</TextBlock>
+                <TextBlock x:ConnectionId='10' x:Name="synopsis" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" TextAlignment="Justify"></TextBlock>
+
+                <Grid Grid.Row="4" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button x:ConnectionId='11' Name="playButton" Grid.Row="1" Grid.Column="1" Background="Transparent"                         >
+                        <Viewbox MaxHeight="100" MaxWidth="200">
+                            <SymbolIcon Symbol="Play" RenderTransformOrigin="1.6,1.6"/>
+                        </Viewbox>
+                    </Button>
+                </Grid>
+            </Grid>
+
+            <GridView x:ConnectionId='5' x:Name="castGrid" Grid.Column="1" Grid.Row="1">
+                <GridView.ItemTemplate>
+                    <DataTemplate                              >
+                        <StackPanel x:ConnectionId='6' Margin="10" Width="Auto">
+                            <Image x:ConnectionId='7' Height="250" Width="400" Stretch="Fill"                              >
+                                <ToolTipService.ToolTip>
+                                    <TextBlock>
+                                       <Run x:ConnectionId='8'                     />
+                                       <Run Text="&#160; as &#160;"/>
+                                       <Run x:ConnectionId='9'                                 />
+                                    </TextBlock>
+                                </ToolTipService.ToolTip>
+                            </Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+    </Grid>
+</Page>
+
+

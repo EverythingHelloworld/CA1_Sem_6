@@ -16,20 +16,23 @@ namespace Sem_6_CA1
             MiniBio = "";
             StarRating = 0;
             IMDB = "";
+            ImageSource = "";
         }
 
-        public CastMember(Name name, DateTime dob, CastRole role, String miniBio, int starRating, String imdb) : base(name, dob)
+        public CastMember(Name name, DateTime dob, CastRole role, String miniBio, int starRating, String imdb, String imageSource) : base(name, dob)
         {
             Role = role;
             MiniBio = miniBio;
             StarRating = starRating;
             IMDB = imdb;
+            ImageSource = imageSource;
         }
 
         public CastRole Role { get; set; }
         public String MiniBio { get; set; }
         public int StarRating { get; set; }
         public String IMDB { get; set; }
+        public String ImageSource { get; set; }
 
         public override String ToString()
         {

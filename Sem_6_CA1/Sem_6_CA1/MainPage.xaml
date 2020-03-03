@@ -12,24 +12,21 @@
     <Grid x:Name="OuterGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <!--Options Menu Grid-->
-        <Grid x:Name="mainOptionsMenuGrid" Grid.Row="0" Grid.Column="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="8*"/>
-            </Grid.RowDefinitions>
-            <TextBlock> Buttons and split view menu go here</TextBlock>
-        </Grid>
-        
+
+        <NavigationView PaneDisplayMode="LeftMinimal" SelectionChanged="OptionsMenu_SelectionChanged" SelectedItem="Home" x:Name="OptionsMenu">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" />
+                <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels"/>
+                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+
         <!--Outer Grid for title bar and shows-->
         <Grid Grid.Row="0" Grid.Column="1">
             <Grid.ColumnDefinitions>
@@ -71,7 +68,7 @@
             </Grid>
             <!--^Close title bar grid-->
 
-            <GridView x:Name="showsGrid" Grid.Column="0" Grid.Row="1">
+            <GridView x:Name="showsGrid" Grid.Column="0" Grid.Row="1" SelectionChanged="ShowsGrid_SelectionChanged">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="local:TV_Show">
                         <StackPanel Margin="10" Width="Auto">
@@ -89,7 +86,7 @@
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
-            
+
         </Grid>
     </Grid>
 </Page>
