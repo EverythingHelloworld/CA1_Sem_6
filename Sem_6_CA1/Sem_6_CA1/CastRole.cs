@@ -12,20 +12,23 @@ namespace Sem_6_CA1
         {
             Description = "";
             ActiveFrom = "";
+            RoleBio = "";
         }
 
-        public CastRole(String description, String activeFrom)
+        public CastRole(String description, String activeFrom, String roleBio)
         {
             Description = description;
             ActiveFrom = activeFrom;
+            RoleBio = roleBio;
         }
 
         public String Description { get; set; }
         public String ActiveFrom { get; set; }
+        public String RoleBio { get; set; }
 
         public override String ToString()
         {
-            return "Description -> " + Description + ", ActiveFrom -> " + ActiveFrom;
+            return "Description -> " + Description + ", ActiveFrom -> " + ActiveFrom +  ", Role Bio -> " + RoleBio;
         }
     }
 }

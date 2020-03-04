@@ -44,10 +44,9 @@ namespace Sem_6_CA1
             img.Source = new BitmapImage(new Uri(selectedShow.ShowImageString));
             List<CastMember> castList = new List<CastMember>();
             castList = selectedShow.GetCastMembers();
-            //foreach (CastMember c in castList)
-            //    Debug.WriteLine(c);
             castGrid.ItemsSource = castList;
         }
+
         public async void playButton_Click(object sender, RoutedEventArgs e)
         {
             if(selectedShow != null)
@@ -58,10 +57,17 @@ namespace Sem_6_CA1
                 // Launch the URI
                 var success = await Launcher.LaunchUriAsync(trailer);
             }
-            else
-            {
-                Debug.WriteLine("Show is null");
-            }
+        }
+
+        private void On_BackRequested(NavigationView nav, NavigationViewBackRequestedEventArgs e)
+        {
+            this.Frame.GoBack();
+        }
+
+        private void CastGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CastMember selected = (CastMember)castGrid.SelectedItem;
+            this.Frame.Navigate(typeof(CastMemberDetails), selected);
         }
     }
 }

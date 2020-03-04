@@ -151,8 +151,8 @@
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\you.jpg">
       <PackagePath>Images\you.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\imdb.png">
+      <PackagePath>Images\imdb.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -181,11 +181,29 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\daisy.mp4">
+      <PackagePath>videos\daisy.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\fitz.mp4">
+      <PackagePath>videos\fitz.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\nikita.mp4">
+      <PackagePath>videos\nikita.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\simmons.mp4">
+      <PackagePath>videos\simmons.mp4</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Sem_6_CA1.xr.xml">
       <PackagePath>Sem_6_CA1.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\CastMemberDetails.xbf">
+      <PackagePath>CastMemberDetails.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

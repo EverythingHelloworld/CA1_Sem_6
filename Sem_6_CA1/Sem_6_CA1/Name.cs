@@ -21,5 +21,10 @@ namespace Sem_6_CA1
 
         public String FirstName { get; set; }
         public String Surname { get; set; }
+
+        public override String ToString()
+        {
+            return FirstName + " " + Surname;
+        }
     }
 }

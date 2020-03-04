@@ -120,6 +120,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CastMember.cs" />
+    <Compile Include="CastMemberDetails.xaml.cs">
+      <DependentUpon>CastMemberDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CastRole.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -157,6 +160,7 @@
     <Content Include="Images\elizabeth.jpg" />
     <Content Include="Images\emily.jpg" />
     <Content Include="Images\iain.jpg" />
+    <Content Include="Images\imdb.png" />
     <Content Include="Images\james.jpg" />
     <Content Include="Images\jodie.jpg" />
     <Content Include="Images\katherine.jpg" />
@@ -186,12 +190,20 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="videos\daisy.mp4" />
+    <Content Include="videos\fitz.mp4" />
+    <Content Include="videos\nikita.mp4" />
+    <Content Include="videos\simmons.mp4" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CastMemberDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -206,6 +218,7 @@
       <Version>6.2.8</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

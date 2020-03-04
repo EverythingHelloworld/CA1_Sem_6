@@ -145,9 +145,23 @@ namespace Sem_6_CA1
         public void SetTVShowDetails()
         {
             //AOS Cast Roles
-            CastRole simmons = new CastRole("Jemma Simmons", "2013-2020");
-            CastRole fitz = new CastRole("Leopold Fitz", "2013-2020");
-            CastRole daisy = new CastRole("Daisy Johnson / Skye", "2013-2020");
+            CastRole simmons = new CastRole("Jemma Simmons", "2013-2020", "Agent Jemma Anne Simmons is a genius biochemist " +
+                "and one of the youngest and most prominent members of S.H.I.E.L.D. research division. Along with Leo Fitz, " +
+                "Simmons was recruited to Coulson's Team and worked with them on all of their missions. While on the team, " +
+                "Simmons became friends with Skye and Grant Ward. During the HYDRA Uprising, Simmons was an active participant " +
+                "in hunting for John Garrett and the rest of the Centipede Project.");
+            CastRole fitz = new CastRole("Leopold Fitz", "2013-2020", "Agent Leopold James 'Leo' Fitz is a S.H.I.E.L.D. " +
+                "agent and scientist. A genius engineer, he is one of the youngest and most prominent members of S.H.I.E.L.D." +
+                " Sci-Tech division, and inseparable from his research partner and friend (and later wife), Jemma Simmons. \n\n One of Iain's " +
+                "most notable scenes in Agents of S.H.I.E.L.D is the following scene in which his character Fitz suffers a Scizophrenic break " +
+                "due to a previous traumatic brain injury which left him with mental disabilities. This injury was further exacerbated by time he " +
+                "spent living in another world living as a dictator.");
+            CastRole daisy = new CastRole("Daisy Johnson / Skye", "2013-2020", "Agent Daisy 'Quake' Johnson, formerly known as Skye, " +
+                "is an Inhuman, a genius-level hacker and a S.H.I.E.L.D. operative. She was born to Calvin Johnson and Jiaying, but was " +
+                "taken away when her mother was seemingly killed by HYDRA. Growing up an orphan, she adopted the name Skye and worked for " +
+                "the Rising Tide, putting her on S.H.I.E.L.D.'s radar. However, Phil Coulson recruited her into his team and appointed her " +
+                "as a consultant where she became a valued agent during the hunt for the Clairvoyant. After the events of the HYDRA Uprising, " +
+                "she joined the rest of her team in going off the grid.");
 
             //AOS Cast Members
             CastMember elizabeth = new CastMember(new Name("Elizabeth",  "Henstridge"), new DateTime(1987, 09, 11), simmons,
@@ -169,23 +183,34 @@ namespace Sem_6_CA1
 
             List<CastMember> castMembersAOS = new List<CastMember>();
 
-            castMembersAOS.Add(elizabeth);
             castMembersAOS.Add(iain);
+            castMembersAOS.Add(elizabeth);
             castMembersAOS.Add(chloe);
 
             aos = new TV_Show("Agents of S.H.I.E.L.D", "ms-appx:///Images/AOS.jpg", "2013", "Sci-Fi", "ABC", "Fridays @ 8pm", 
             "Phil Coulson of the Strategic Homeland Intervention, Enforcement and Logistics Division " +
             "assembles an elite covert team to find and deal with these threats wherever they are found. " +
             "With a world rapidly becoming more bizarre and dangerous than ever before as the supervillains arise, " +
-            "these agents of S.H.I.E.L.D. are ready to take them on.", 5, "https://www.youtube.com/watch?v=vzilBPDirPs", castMembersAOS);
+            "these agents of S.H.I.E.L.D. are ready to take them on.", 5, "https://www.youtube.com/watch?v=Uqv6hlXKU4k", castMembersAOS);
 
             foreach (CastMember c in aos.GetCastMembers())
                 Debug.WriteLine(c);
 
             //Travelers
-            CastRole marcy = new CastRole("Marcy Warton", "2016-2018");
-            CastRole philip = new CastRole("Philip Pearson", "2016-2018");
-            CastRole carly = new CastRole("Carly Shannon", "2016-2018");
+            CastRole marcy = new CastRole("Marcy Warton", "2016-2018", "Marcy Warton (Traveler 3569), played by starring cast member " +
+                "MacKenzie Porter, is the medic for the show's core team. Her host body is that of a mentally disabled woman who works as a " +
+                "cleaning girl in a library. The fact that she was mentally disabled was unknown to The Director and others in the " +
+                "future due to fake social media profiles created as an exercise with her social worker David Mailer to help teach her " +
+                "about social media. The fake profile stated that she was a librarian and that David was a reporter doing research for a " +
+                "newspaper story.");
+            CastRole philip = new CastRole("Philip Pearson", "2016-2018", "Philip Pearson (Traveler 3326), played by starring cast member " +
+                "Reilly Dolman, is the historian of the show's core Traveler team. His host body is a heroin-addicted college student, though " +
+                "The Director and those in the future were unaware of his addiction due to his parent's statement that he had died after his " +
+                "first use, most likely because they were in denial.");
+            CastRole carly = new CastRole("Carly Shannon", "2016-2018", "Carly Shannon (Traveler 3465), played by starring cast member Nesta " +
+                "Cooper, is a member of the show's core Traveler team and the team's Tactician. The host body is a stay at home mother in an " +
+                "abusive relationship with the father of her baby, Police Officer Jeff Conniker. The Traveler consciousness, Traveler 3465, was " +
+                "formerly in a relationship with fellow Traveler team member Grant MacLaren.");
 
             //Travelers Cast Members
             CastMember mackenzie = new CastMember(new Name("MackKenzie", "Porter"), new DateTime(1990, 01, 29), marcy,
@@ -215,9 +240,23 @@ namespace Sem_6_CA1
                 "into people of the 21st century, while attempting to change the path of humanity.", 5, "https://www.youtube.com/watch?v=99LZwZmSoNo", castMembersTrav);
 
             //Killing Eve
-            CastRole eve = new CastRole("Eve Polastri", "2018-2020");
-            CastRole villanelle = new CastRole("Villanelle", "2018-2020");
-            CastRole bill = new CastRole("Bill Pargrave", "2018");
+            CastRole eve = new CastRole("Eve Polastri", "2018-2020", "Eve Polastri is one of the main protagonists in the BBC series Killing Eve. " +
+                "She is an MI5 security operative who soon becomes involved in a cat-and-mouse game with a hired assassin Villanelle. The two women " +
+                "becoming mutually obsessed, sharing what has been called a 'crackling chemistry... between bitter enemies and would-be lovers'. " +
+                "Agent Polastri tracks the 'utterly unforgivable' assassin Villanelle across Europe, not as hero and villain but as 'two broken " +
+                "women whose flaws bind them together in a twisted pas de deux'.");
+            CastRole villanelle = new CastRole("Villanelle", "2018-2020", "Oksana Anatoljevna Astankova, better known as Villanelle, is a " +
+                "hired assassin who soon becomes involved in a cat-and-mouse game with MI5 security operative Eve Polastri. The two women becoming " +
+                "mutually obsessed, sharing what has been called a 'crackling chemistry... between bitter enemies and would-be lovers'. Agent Polastri " +
+                "tracks the 'utterly unforgivable' assassin Villanelle across Europe, not as hero and villain but as 'two broken women whose flaws bind " +
+                "them together in a twisted pas de deux'.");
+            CastRole bill = new CastRole("Bill Pargrave", "2018", "Bill Pargrave is is Head of Security Section at MI5. Bill is weary. His independently - " +
+                "wealthy wife, Keiko, and their newborn daughter have run him into the ground.He never sleeps and he sees work as a haven from home. He doesn’t " +
+                "want trouble or excitement or controversy at work – he just wants life to be quiet. He ducked out of being the maverick field agent years ago. " +
+                "But it flickers…He and Eve have worked together for over ten years – they have a great relationship. Bill humors Eve’s conspiracies, teases her " +
+                "and also dismisses them. She has been right once or twice, but when she is, there is normally a whole load of bureaucratic red tape bullshit to " +
+                "have to sort through that, these days, he’d rather not have to deal with. He is solid, but tired. When Eve proposes he join her in a secret assassin " +
+                "tracking unit with MI6, he discovers he may have some life left in him yet.");
 
             //Killing Eve Cast Members
             CastMember sandra = new CastMember(new Name("Sandra", "Oh"), new DateTime(1971, 07, 20), eve,
@@ -247,9 +286,24 @@ namespace Sem_6_CA1
             "https://www.youtube.com/watch?v=Kk0PyD-XNZA", castMembersKE);
 
             //Nikita
-            CastRole nikita = new CastRole("Nikita", "2010-2013");
-            CastRole birkhoff = new CastRole("Seymour Birkhoff", "2010-2013");
-            CastRole alex = new CastRole("Lynsey Fonseca", "2010-2013");
+            CastRole nikita = new CastRole("Nikita", "2010-2013", "Nikita Mears is a covert operations operative trained by the secret government " +
+                "organization known as Division, she was recruited after escaping her abusive foster father, becoming a drug addict and living on the " +
+                "streets - and was sent to death row after killing a police officer, upon which her death was faked. As a Division field agent, " +
+                "Nikita fell in love with the civilian Daniel Monroe (who believed she was an airline consultant). After bugging his home, Division " +
+                "ordered his death so that Nikita would not be distracted by emotional entanglements. She escaped the organization shortly thereafter, " +
+                "on the run as they tried to hunt her down and eliminate her.");
+            CastRole birkhoff = new CastRole("Seymour Birkhoff", "2010-2013", "Seymour Birkhoff (born Lionel Peller) is the tech man of Team " +
+                "Nikita along with Sonya. He's also the former head of IT at Division. He's been at Division under both Percy and Ryan's command. Seymour " +
+                "Birkhoff was born as Lionel Peller, a son of Ronald Peller (a computer engineer), and Rosemary. Rosemary had already given birth to a daughter, " +
+                "Lily, and a son, Lyle. Lionel was considered an accident. After he successfully turned off the lights in the street using father's computer he " +
+                "began to hang out with hackers. His father thought that he could set him straight if he sent him to the military school. Once Lionel had found " +
+                "out about this, he decided to fake his death and change his name to Seymour Birkhoff. Before Seymour was recruited by Division, he was a college student. " +
+                "During his time at college his cyber criminal handle was 'Shadow Walker'.");
+            CastRole alex = new CastRole("Alexandra 'Alex' Udinov", "2010-2013", "Alex is the daughter of the late Russian oligarch " +
+                "Nikolai Udinov and his wife who were murdered when Alex was a child. Nikolai owned the billion-dollar company Zetrov, " +
+                "which Alex was the sole heir of. She was saved by Nikita as she watched the rest of her family perish. Nikita was powerless " +
+                "to save Alex from anything else as she had to return to Division, and she gave Alex to one of Nikolai's associates. As a result, " +
+                "Alex was sold into sex slavery at very young age by her father's former associate, since he was afraid of retribution for hiding her.");
 
             //Nikita Cast Members
             CastMember maggie = new CastMember(new Name("Maggie", "Q"), new DateTime(1979, 05, 22), nikita,
@@ -281,9 +335,10 @@ namespace Sem_6_CA1
             "A rogue assassin returns to take down the secret organization that trained her.", 5, "https://www.youtube.com/watch?v=rqE1GKzmC6M", castMembersNikita);
 
             //Orphan Black
-            CastRole various = new CastRole("Sarah Manning / Elizabeth Childs / Alison Hendrix / Cosima Niehaus / " +
-                "Helena / Rachel Duncan / Tony Sawicki / Jennifer Fitzsimmons / Katja Obinger / " +
-                "Pupok (Scorpion, voice) / Krystal Goderitch / Veera Suominen (M.K.) / Various", "2013-2017");
+            CastRole various = new CastRole("Sarah Manning and many more", "2013-2017", "Tatiana Maslany rose to fame for her starring role in Orphan Black where she " +
+                "plays 15+ clones with completely different personalities and quirks. Her main roles on the series include Sarah Manning - a streetwise con artist, Beth Childs - " +
+                "a police officer, Cosima Niehaus - a scientist, Allison Hendrix - a suburban housewife and Helena - a psychotic killer. She appears in various other roles throughout " +
+                "the series. ");
 
             //Orphan Black Cast Members
             CastMember tatiana = new CastMember(new Name("Tatiana", "Maslany"), new DateTime(1985, 09, 22), various,
@@ -301,9 +356,18 @@ namespace Sem_6_CA1
             " of a girl who looks just like her.", 3, "https://www.youtube.com/watch?v=do_BCA-vR9E", castMembersOB);
 
             //Brooklyn Nine-Nine
-            CastRole jake = new CastRole("Jake Peralta", "2013-");
-            CastRole amy = new CastRole("Amy Santiago", "2013-");
-            CastRole rosa = new CastRole("Rosa Diaz", "2013-");
+            CastRole jake = new CastRole("Jake Peralta", "2013-", "Detective Jacob 'Jake' Peralta is the main protagonist of the show. " +
+                "He is a cocky, arrogant and immature but talented NYPD detective stationed in Brooklyn's 99th Precinct. Peralta is a cop that has " +
+                "never had to work that hard or follow the rules too closely. Perhaps because he has the best arrest record among his colleagues, he's " +
+                "been enabled - if not indulged - throughout his entire career.");
+            CastRole amy = new CastRole("Amy Santiago", "2013-", "Sergeant Amy Santiago is a main character of the show. She is a sergeant and a former " +
+                "detective at the 99th precinct of the NYPD. Always eager to impress, Amy is looking for a mentor to help her achieve her dream of being " +
+                "the youngest person to be promoted to captain.");
+            CastRole rosa = new CastRole("Rosa Diaz", "2013-", "Detective Rosalita 'Rosa' Diaz is a main character of the show. She is considered " +
+                "'the tough guy' and the 'badass' in the Precinct. Rosa is scary, smart, secretive, and difficult to read. Most of the members of " +
+                "the precinct are frightened and a little disturbed by her. Rosa takes pride in the fact that no one knows much about her. Jake only " +
+                "knows three facts about her, one of which is that she won't let people crash at her place, despite the fact that Rosa refers to him as " +
+                "her 'closest friend'.");
 
             //Brooklyn Nine-Nine Cast Members
             CastMember andy = new CastMember(new Name("Andy", "Samberg"), new DateTime(1978, 08, 18), jake,
@@ -336,9 +400,16 @@ namespace Sem_6_CA1
             "https://www.youtube.com/watch?v=sEOuJ4z5aTc", castMembersB99);
 
             //You
-            CastRole joe = new CastRole("Joe Goldberg", "2018-");
-            CastRole love = new CastRole("Love Quinn", "2019-");
-            CastRole forty = new CastRole("Forty Quinn", "2019");
+            CastRole joe = new CastRole("Joe Goldberg", "2018-", "Joe is a loner bookstore manager who becomes infatuated with " +
+                "a woman named Guinevere Beck and begins to stalk her in a variety of ways to find out everything about her and " +
+                "make her fall in love with him. However, his obsession soon becomes out of control when he starts trying to control " +
+                "every aspect of her life.");
+            CastRole love = new CastRole("Love Quinn", "2019-", "Love is an 'artistic' aspiring chef in LA working as a produce manager " +
+                "in a high-end grocery store, and she's not interested in social media or branding and much more into leading an interesting " +
+                "life. She is fiercely independent. Love is in grief when she meets Joe, and can sense he too has known life - changing loss.");
+            CastRole forty = new CastRole("Forty Quinn", "2019", "Forty Quinn is a main character in the television series You. He's confident, " +
+                "opinionated, and privileged, a charming bully or a razor-sharp bully. He's working through a 12-step program, relying on his sister " +
+                "for support and attention.");
 
             //You Cast Members
             CastMember penn = new CastMember(new Name("Penn", "Badgely"), new DateTime(1986, 11, 01), joe,
@@ -368,9 +439,23 @@ namespace Sem_6_CA1
             "himself into the lives of those he is transfixed by.", 5, "https://www.youtube.com/watch?v=srx7fSBwvF4", castMembersYou);
 
             //Breaking Bad
-            CastRole jesse = new CastRole("Jesse Pinkman", "2008-2013");
-            CastRole walt = new CastRole("Walter White", "2008-2013");
-            CastRole saul = new CastRole("Saul Goodman", "2009-2013");
+            CastRole jesse = new CastRole("Jesse Pinkman", "2008-2013", "Jesse Bruce Pinkman is the deuteragonist of Breaking Bad and " +
+                "the main protagonist of El Camino. He is the former partner of Walter White in the methamphetamine drug trade. " +
+                "Jesse was a small-time methamphetamine user, manufacturer, and dealer. He was also an inattentive student in Walter " +
+                "White's chemistry class, leading to his dropping out. In his mid-20s, Jesse became Walt's business partner in the meth trade. " +
+                "Before his partnership with Walt, he, operating under the pseudonym 'Cap'n Cook', added a little Chili powder to make his " +
+                "methamphetamine stand out in the market.");
+            CastRole walt = new CastRole("Walter White", "2008-2013", "Walter Hartwell 'Walt' White Sr., also known by his clandestine " +
+                "pseudonym 'Heisenberg', is the main protagonist of Breaking Bad. He was a chemist and a former chemistry teacher in " +
+                "Albuquerque, New Mexico, who, after being diagnosed with Stage 3A inoperable lung cancer, started manufacturing crystal " +
+                "methamphetamine to both pay for his treatments and provide for his family in the event of his passing. He is the central " +
+                "character of the series, and is portrayed as a protagonist, antagonist and antihero. As the series progresses, Walter " +
+                "gradually becomes darker and takes on a more villainous role.");
+            CastRole saul = new CastRole("Saul Goodman", "2009-2013", "James Morgan 'Jimmy' McGill, better known by his professional alias " +
+                "Saul Goodman or Jimmy 'Saul Goodman' McGill ('Magic Man', is the former principal attorney of Saul Goodman & Associates. " +
+                "He operated out of a cheap strip mall office and ran over-the-top late night TV commercials advising potential clients to '" +
+                "Better Call Saul' when in trouble with the law. While his ads seemed tacky and cheap, Saul was an effective lawyer, using " +
+                "illegal tactics and dirty schemes to get his clients released or acquitted.");
 
             //Breaking Bad Cast Members
             CastMember aaronP = new CastMember(new Name("Aaron", "Paul"), new DateTime(1979, 08, 27), jesse,
@@ -403,9 +488,15 @@ namespace Sem_6_CA1
             "and selling methamphetamine in order to secure his family's future.", 5, "https://www.youtube.com/watch?v=Pev38s3xPgM", castMembersBrba);
 
             //Shadowhunters
-            CastRole alec = new CastRole("Alec Lightwood", "2016-2019");
-            CastRole clary = new CastRole("Jace Lightwood", "2016-2019");
-            CastRole jace = new CastRole("Clary Fray", "2016-2019");
+            CastRole alec = new CastRole("Alec Lightwood", "2016-2019", "Alexander 'Alec' Lightwood-Bane is the brother of Isabelle and Max Lightwood, " +
+                "the parabatai of Jace Herondale, and the husband of the High Warlock of Alicante, Magnus Bane. Alec is a responsible leader who cares " +
+                "for the well-being of his people and is the current Inquisitor of the Clave.");
+            CastRole clary = new CastRole("Jace Lightwood", "2016-2019", "Clarissa 'Clary' Fairchild, also known as Clary Fray, is a " +
+                "Shadowhunter who was raised among mundanes, unaware of her true heritage. Clary's simple and content life was disrupted " +
+                "when her mother was kidnapped, forcing her into action. Led on a journey of self-discovery in the dangerous and magical " +
+                "Shadow World, the secrets of her past were revealed as she begins to embrace her newfound powers.");
+            CastRole jace = new CastRole("Clary Fray", "2016-2019", "Jace Herondale, previously and widely known as Jace Wayland, is a " +
+                "lethal and expert Shadowhunter—a skilled soldier in their war against demons.");
 
             //Shadowhunters Cast Members
             CastMember matt = new CastMember(new Name("Matthew", "Daddario"), new DateTime(1987, 10, 01), alec,
@@ -438,9 +529,19 @@ namespace Sem_6_CA1
 
             //12 Monkeys
 
-            CastRole cole = new CastRole("James Cole", "2015-2018");
-            CastRole cassie = new CastRole("Cassandra Railly", "2015-2018");
-            CastRole jennifer = new CastRole("Jennifer Goines", "2015-2018");
+            CastRole cole = new CastRole("James Cole", "2015-2018", "James William Cole is a time traveler who works with Project Splinter " +
+                "to stop the apocolypse. After being captured by the security of the Temporal Facility, Cole and his friend Jose Ramse are " +
+                "allowed safe haven within the Temporal Facility in exchange for James' cooperation in Project Splinter's mission to prevent " +
+                "the Kalavirus outbreak through the use of time travel.");
+            CastRole cassie = new CastRole("Cassandra Railly", "2015-2018", "Dr. Cassandra Railly is a character on 12 Monkeys. She is a " +
+                "virologist while she worked for the CDC. After meeting a time traveler from the future, James Cole, she worked with him " +
+                "to help prevent the coming apocolypse. After being fataly injured, she was sent to the future where she was treated and " +
+                "became a time traveler along with the other members with Project Splinter.");
+            CastRole jennifer = new CastRole("Jennifer Goines", "2015-2018", "Jennifer Goines is a Primary, meaning she is connected to time " +
+                "and as a result has visions of events that are destined to happen in the future. Jennifer Goines was born August 28, 1985. " +
+                "She was brilliant but mentally unstable from an early age. When she was a child, her mother, who called her a monster, " +
+                "attempted to drown her in a bathtub; a maid intervened. Jennifer's father, Leland Goines, had Jennifer's mother committed " +
+                "to a mental institution. As an adult, she worked as a scientist at the Markridge Group.");
 
             //12 Monkeys Cast Members
 
@@ -470,8 +571,8 @@ namespace Sem_6_CA1
 
             twelveMonkeys = new TV_Show("12 Monkeys", "ms-appx:///Images/12Monkeys.jpg", "2015", "Sci-Fi", "SyFy", "Ended",
             "Follows the journey of a time traveler from the post-apocalyptic future who appears in present day " +
-            "on a mission to locate and eradicate the source of a deadly plague that will nearly destroy the human race.", 5, 
-            "https://www.youtube.com/watch?v=4b4agMSCbII", castMembers12M);          
+            "on a mission to locate and eradicate the source of a deadly plague that will nearly destroy the human race.", 5,
+            "https://www.youtube.com/watch?v=wZNcVYqnCFw", castMembers12M);          
         }
     }
 }

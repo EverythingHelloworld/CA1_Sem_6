@@ -7,6 +7,7 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
+CastMemberDetails.xbf
 MainPage.xbf
 Sem_6_CA1.xr.xml
 ShowDetailsPage.xbf
@@ -28,6 +29,7 @@ Images\dom.jpg
 Images\elizabeth.jpg
 Images\emily.jpg
 Images\iain.jpg
+Images\imdb.png
 Images\james.jpg
 Images\jodie.jpg
 Images\katherine.jpg
@@ -50,3 +52,7 @@ Images\trav.jpg
 Images\victoria.jpg
 Images\you.jpg
 Properties\Default.rd.xml
+videos\daisy.mp4
+videos\fitz.mp4
+videos\nikita.mp4
+videos\simmons.mp4

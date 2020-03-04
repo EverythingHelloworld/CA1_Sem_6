@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="Sem_6_CA1.CastMemberDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sem_6_CA1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="OuterGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <NavigationView PaneDisplayMode="LeftMinimal" SelectedItem="Home" x:Name="OptionsMenu" BackRequested="On_BackRequested" IsBackEnabled="True">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" FontSize="20"/>
+                <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels" FontSize="20"/>
+                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" FontSize="20"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+        
+        <Grid x:Name="CastMemberDetailsGrid" Grid.Row="0" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="CastMemberInfoGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image  x:Name="castMemberImage" Stretch="Fill"></Image>
+                <TextBlock x:Name="CastMemberName" TextWrapping="WrapWholeWords" Grid.Row="1" FontSize="60" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="CastMemberDOB" TextWrapping="WrapWholeWords" Grid.Row="2" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                <Button x:Name="IMDBButton" Grid.Row="2" Grid.Column="0" Background="Transparent" Click="IMDBButton_Click" HorizontalAlignment="Right">
+                    <Image x:Name="IMDBLink"  Source="ms-appx:///Images/imdb.png"></Image>
+                </Button>
+                <TextBlock x:Name="CastMemberBio" TextWrapping="WrapWholeWords" Grid.Row="3" FontSize="20" HorizontalAlignment="Left" TextAlignment="Justify"></TextBlock>
+            </Grid>
+            <Grid x:Name="CastMemberRoleGrid" Grid.Row="0" Grid.Column="1">
+                <Grid Grid.Row="0" Grid.Column="2" Margin="0,0,60,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="6*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="CastMemberRole" Grid.Row="0" Grid.Column="0" TextWrapping="WrapWholeWords" FontSize="40" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock x:Name="CastMemActiveFrom" TextWrapping="WrapWholeWords" FontSize="20" HorizontalAlignment="Center" Grid.Row="1"></TextBlock>
+                    <TextBlock x:Name="CastMemRoleBio" TextWrapping="WrapWholeWords" FontSize="19" Grid.Row="2" TextAlignment="Justify"></TextBlock>
+                    <TextBlock TextWrapping="WrapWholeWords" FontSize="35" Grid.Row="3" TextAlignment="Center">Notable Scene:</TextBlock>
+                    <MediaPlayerElement x:Name="NotableSceneVid" Grid.Row="4" Width="auto" AutoPlay="True" Margin="0,0,0,20" AreTransportControlsEnabled="True"/>
+
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
