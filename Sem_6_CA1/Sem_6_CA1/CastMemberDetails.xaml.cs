@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -47,18 +48,43 @@ namespace Sem_6_CA1
             CastMemberRole.Text = " As: " + selectedCastMem.Role.Description;
             CastMemActiveFrom.Text = "Active From: " + selectedCastMem.Role.ActiveFrom;
             CastMemRoleBio.Text = selectedCastMem.Role.RoleBio;
-            Uri filePath = new Uri("ms-appx:///videos/fitz.mp4");
+            NotableVidDesc.Text = selectedCastMem.Role.SceneDesc;
+            Uri filePath = new Uri(selectedCastMem.Role.NotableSceneSource);
             NotableSceneVid.Source = MediaSource.CreateFromUri(filePath);
+            SetStars();
+        }
 
-            //showTitle.Text = selectedShow.Title;
-            //channel.Text = selectedShow.Channel;
-            //screeningTime.Text = selectedShow.ScreeningTime;
-            //synopsis.Text = selectedShow.Synopsis;
-            //Image img = (Image)this.FindName("showImage");
-            //img.Source = new BitmapImage(new Uri(selectedShow.ShowImageString));
-            //List<CastMember> castList = new List<CastMember>();
-            //castList = selectedShow.GetCastMembers();
-            //castGrid.ItemsSource = castList;
+
+        private void SetStars()
+        {
+            stars.FontFamily = new FontFamily("Segoe MDL2 Assets");
+            for (int i=0; i < selectedCastMem.StarRating; i++)
+            {
+                stars.Text += "\uE735";
+            }
+        }
+
+        private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            // find NavigationViewItem with Content that equals InvokedItem
+            var item = sender.MenuItems.OfType<NavigationViewItem>().First(x => (string)x.Content == (string)args.InvokedItem);
+            Debug.WriteLine("We are here -> " + item);
+            NavView_Navigate(item as NavigationViewItem);
+        }
+
+        private void NavView_Navigate(NavigationViewItem item)
+        {
+            Debug.WriteLine("Item -> " + item);
+            switch (item.Tag)
+            {
+                case "Home":
+                    this.Frame.Navigate(typeof(MainPage));
+                    break;
+
+                case "Channels":
+                    this.Frame.Navigate(typeof(Channels));
+                    break;
+            }
         }
 
         private void On_BackRequested(NavigationView nav, NavigationViewBackRequestedEventArgs e)

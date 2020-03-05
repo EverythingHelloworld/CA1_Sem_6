@@ -18,11 +18,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <NavigationView PaneDisplayMode="LeftMinimal" SelectedItem="Home" x:Name="OptionsMenu" BackRequested="On_BackRequested" IsBackEnabled="True">
+        <NavigationView PaneDisplayMode="LeftCompact" SelectedItem="Home" x:Name="OptionsMenu" BackRequested="On_BackRequested" IsBackEnabled="True" IsSettingsVisible="False" ItemInvoked="NavView_ItemInvoked">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" FontSize="20"/>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Home" FontSize="20"/>
                 <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels" FontSize="20"/>
-                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" FontSize="20"/>
             </NavigationView.MenuItems>
         </NavigationView>
 
@@ -48,7 +47,7 @@
                 </Grid.RowDefinitions>
 
                 <!--Title-->
-                <TextBlock x:Name="showTitle" FontSize="50" HorizontalAlignment="Center" Margin="20"></TextBlock>
+                <TextBlock x:Name="showTitle" FontSize="40" HorizontalAlignment="Center" Margin="20" Height="Auto" Width="Auto" TextWrapping="WrapWholeWords"></TextBlock>
             </Grid>
             <!--^Close title bar grid-->
             <Grid Grid.Row="1" Grid.Column="0" Margin="20,0,0,0">
@@ -71,7 +70,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="8*"/>
                     </Grid.RowDefinitions>
-                    <Image Name="showImage" Stretch="Fill" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"/>
+                    <Image Name="showImage" Height="Auto" Width="Auto" Grid.ColumnSpan="2" Margin="0,0,0,0" VerticalAlignment="Stretch"/>
                 </Grid>
                 <Grid Grid.Row="1" Grid.Column="0">
                     <Grid.ColumnDefinitions>
@@ -81,11 +80,14 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock x:Name="channel" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap"></TextBlock>
-                    <TextBlock x:Name="screeningTime" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Right"></TextBlock>
+                    <TextBlock x:Name="channel" Grid.Row="0" Grid.Column="0" TextWrapping="WrapWholeWords" Height="Auto" Width="Auto"></TextBlock>
+                    <TextBlock x:Name="screeningTime" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Right" Height="Auto" Width="Auto"></TextBlock>
                 </Grid>
-                <TextBlock Grid.Row="2" Grid.Column="0" FontSize="24">Show Synopsis:</TextBlock>
-                <TextBlock x:Name="synopsis" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" TextAlignment="Justify"></TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0" FontSize="24" Height="Auto" Width="Auto" TextWrapping="WrapWholeWords">Show Synopsis:</TextBlock>
+                <ScrollViewer Height="Auto" Width="Auto" 
+                  VerticalScrollBarVisibility="Auto"  Grid.Row="3">
+                    <TextBlock x:Name="synopsis" Grid.Row="3" Grid.Column="0" TextWrapping="WrapWholeWords" TextAlignment="Justify"></TextBlock>
+                </ScrollViewer>
                 <Button Name="playButton" Grid.Row="4" Grid.Column="0" Background="Transparent" Click="playButton_Click" ToolTipService.ToolTip="Play Trailer" HorizontalAlignment="Center">
                     <Viewbox MaxHeight="100" MaxWidth="200">
                         <SymbolIcon Symbol="Play" RenderTransformOrigin="1.6,1.6"/>
@@ -97,7 +99,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="local:CastMember">
                         <StackPanel Margin="10" Width="Auto">
-                            <Image Height="500" Width="500" Stretch="Fill" Source="{x:Bind ImageSource}">
+                            <Image Height="Auto" Width="Auto" MaxWidth="500" MaxHeight="500" Stretch="Fill" Source="{x:Bind ImageSource}">
                                 <ToolTipService.ToolTip>
                                     <TextBlock>
                                        <Run Text="{x:Bind Name}"/>

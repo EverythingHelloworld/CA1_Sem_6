@@ -47,6 +47,27 @@ namespace Sem_6_CA1
             castGrid.ItemsSource = castList;
         }
 
+        private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            // find NavigationViewItem with Content that equals InvokedItem
+            var item = sender.MenuItems.OfType<NavigationViewItem>().First(x => (string)x.Content == (string)args.InvokedItem);
+            NavView_Navigate(item as NavigationViewItem);
+        }
+
+        private void NavView_Navigate(NavigationViewItem item)
+        {
+            switch (item.Tag)
+            {
+                case "Home":
+                    this.Frame.Navigate(typeof(MainPage));
+                    break;
+
+                case "Channels":
+                    this.Frame.Navigate(typeof(Channels));
+                    break;
+            }
+        }
+
         public async void playButton_Click(object sender, RoutedEventArgs e)
         {
             if(selectedShow != null)

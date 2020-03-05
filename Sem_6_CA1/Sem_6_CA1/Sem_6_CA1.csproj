@@ -124,6 +124,9 @@
       <DependentUpon>CastMemberDetails.xaml</DependentUpon>
     </Compile>
     <Compile Include="CastRole.cs" />
+    <Compile Include="Channels.xaml.cs">
+      <DependentUpon>Channels.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,7 @@
     <Content Include="Images\aaron2.jpg" />
     <Content Include="Images\aaron3.jpg" />
     <Content Include="Images\alex.jpg" />
+    <Content Include="Images\alison.jpg" />
     <Content Include="Images\amanda.jpg" />
     <Content Include="Images\andy.jpg" />
     <Content Include="Images\AOS.jpg" />
@@ -165,6 +169,7 @@
     <Content Include="Images\jodie.jpg" />
     <Content Include="Images\katherine.jpg" />
     <Content Include="Images\ke.jpg" />
+    <Content Include="Images\krystal.png" />
     <Content Include="Images\lynsey.jpg" />
     <Content Include="Images\mackenzie.jpg" />
     <Content Include="Images\maggie.jpg" />
@@ -174,11 +179,12 @@
     <Content Include="Images\nikita.jpg" />
     <Content Include="Images\orphanBlack.jpg" />
     <Content Include="Images\penn.jpg" />
+    <Content Include="Images\rachel.jpg" />
     <Content Include="Images\reilly.jpg" />
     <Content Include="Images\sandra.jpg" />
+    <Content Include="Images\sarah.jpg" />
     <Content Include="Images\sh.jpg" />
     <Content Include="Images\stephanie.jpg" />
-    <Content Include="Images\tatiana.jpg" />
     <Content Include="Images\trav.jpg" />
     <Content Include="Images\victoria.jpg" />
     <Content Include="Images\you.jpg" />
@@ -190,10 +196,36 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="videos\alec.mp4" />
+    <Content Include="videos\alex.mp4" />
+    <Content Include="videos\alison.mp4" />
+    <Content Include="videos\amy.mp4" />
+    <Content Include="videos\bill.mp4" />
+    <Content Include="videos\birkhoff.mp4" />
+    <Content Include="videos\carly.mp4" />
+    <Content Include="videos\cassie.mp4" />
+    <Content Include="videos\clary.mp4" />
+    <Content Include="videos\cole.mp4" />
     <Content Include="videos\daisy.mp4" />
+    <Content Include="videos\eve.mp4" />
     <Content Include="videos\fitz.mp4" />
+    <Content Include="videos\forty.mp4" />
+    <Content Include="videos\jace.mp4" />
+    <Content Include="videos\jake.mp4" />
+    <Content Include="videos\jennifer.mp4" />
+    <Content Include="videos\jesse.mp4" />
+    <Content Include="videos\joe.mp4" />
+    <Content Include="videos\krystal.mp4" />
+    <Content Include="videos\marcy.mp4" />
     <Content Include="videos\nikita.mp4" />
+    <Content Include="videos\philip.mp4" />
+    <Content Include="videos\rachel.mp4" />
+    <Content Include="videos\rosa.mp4" />
+    <Content Include="videos\sarah.mp4" />
+    <Content Include="videos\saul.mp4" />
     <Content Include="videos\simmons.mp4" />
+    <Content Include="videos\villanelle.mp4" />
+    <Content Include="videos\walt.mp4" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -201,6 +233,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="CastMemberDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Channels.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

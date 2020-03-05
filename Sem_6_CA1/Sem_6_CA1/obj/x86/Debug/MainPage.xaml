@@ -18,11 +18,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <NavigationView x:ConnectionId='3' PaneDisplayMode="LeftMinimal"                                                 SelectedItem="Home" x:Name="OptionsMenu">
+        <NavigationView x:ConnectionId='3' PaneDisplayMode="LeftCompact" SelectedItem="Home" x:Name="OptionsMenu" IsSettingsVisible="False"                                  >
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" />
                 <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels"/>
-                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" />
             </NavigationView.MenuItems>
         </NavigationView>
 
@@ -50,7 +49,7 @@
                 </Grid.RowDefinitions>
 
                 <!--Dropdown-->
-                <ComboBox x:ConnectionId='10' x:Name="cbFilterByGenre" Width="200" HorizontalAlignment="Center" Margin="50" SelectedItem="All" Grid.Row="0" Grid.Column="0"                                                     >
+                <ComboBox x:ConnectionId='10' x:Name="cbFilterByGenre" Width="Auto" Height="Auto" HorizontalAlignment="Center" Margin="50" SelectedItem="All" Grid.Row="0" Grid.Column="0"                                                     >
                     <x:String>All</x:String>
                     <x:String>Action</x:String>
                     <x:String>Comedy</x:String>
@@ -59,11 +58,11 @@
                 </ComboBox>
 
                 <!--Title-->
-                <TextBlock FontSize="50" HorizontalAlignment="Center" Margin="20" Grid.Row="0" Grid.Column="1">Tv Series</TextBlock>
+                <TextBlock FontSize="35" HorizontalAlignment="Center" Margin="20" Grid.Row="0" Grid.Column="1" Width="Auto" Height="Auto">Tv Series</TextBlock>
 
                 <!--Radio Buttons-->
-                <RadioButton x:ConnectionId='11' Content="Sort by Rating" Tag="ratingSort" x:Name="rbSortByRating" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="3" FontSize="12"                                 />
-                <RadioButton x:ConnectionId='12' Content="Sort by Year" Tag="yearSort" x:Name="rbSortByYear" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="2" FontSize="12"                               />
+                <RadioButton x:ConnectionId='11' Width="Auto" Height="Auto" Content="Sort by Rating" Tag="ratingSort" x:Name="rbSortByRating" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="3" FontSize="12"                                 />
+                <RadioButton x:ConnectionId='12' Width="Auto" Height="Auto" Content="Sort by Year" Tag="yearSort" x:Name="rbSortByYear" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="2" FontSize="12"                               />
 
             </Grid>
             <!--^Close title bar grid-->
@@ -86,7 +85,6 @@
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
-
         </Grid>
     </Grid>
 </Page>

@@ -17,11 +17,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <NavigationView x:ConnectionId='3' PaneDisplayMode="LeftMinimal" SelectedItem="Home" x:Name="OptionsMenu"                                  IsBackEnabled="True">
+        <NavigationView x:ConnectionId='3' PaneDisplayMode="LeftCompact" SelectedItem="Home" x:Name="OptionsMenu"                                  IsBackEnabled="True" IsSettingsVisible="False"                                  >
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Home" Tag="Nav_Home" FontSize="20"/>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Home" FontSize="20" />
                 <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels" FontSize="20"/>
-                <NavigationViewItem Icon="SolidStar" Content="Favourites" Tag="Faves" FontSize="20"/>
             </NavigationView.MenuItems>
         </NavigationView>
         
@@ -34,25 +33,30 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid x:ConnectionId='5' x:Name="CastMemberInfoGrid">
+            <Grid x:ConnectionId='5' x:Name="CastMemberInfoGrid" Margin="0,0,50,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*"/>
-                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="9*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="8*"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image x:ConnectionId='11'  x:Name="castMemberImage" Stretch="Fill"></Image>
-                <TextBlock x:ConnectionId='12' x:Name="CastMemberName" TextWrapping="WrapWholeWords" Grid.Row="1" FontSize="60" HorizontalAlignment="Center"></TextBlock>
-                <TextBlock x:ConnectionId='13' x:Name="CastMemberDOB" TextWrapping="WrapWholeWords" Grid.Row="2" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <Button x:ConnectionId='14' x:Name="IMDBButton" Grid.Row="2" Grid.Column="0" Background="Transparent"                          HorizontalAlignment="Right">
-                    <Image x:ConnectionId='16' x:Name="IMDBLink"  Source="ms-appx:///Images/imdb.png"></Image>
+                <Image x:ConnectionId='12'  x:Name="castMemberImage" Height="Auto" Width="Auto"></Image>
+                <TextBlock x:ConnectionId='13' x:Name="CastMemberName" TextWrapping="Wrap" Grid.Row="1" FontSize="35" HorizontalAlignment="Center" Height="Auto" Width="Auto"></TextBlock>
+                <TextBlock x:ConnectionId='14' x:Name="CastMemberDOB" TextWrapping="WrapWholeWords" Grid.Row="2" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                <Button x:ConnectionId='15' x:Name="IMDBButton" Grid.Row="2" Grid.Column="0" Background="Transparent"                          HorizontalAlignment="Right">
+                    <Image x:ConnectionId='18' x:Name="IMDBLink"  Source="ms-appx:///Images/imdb.png"></Image>
                 </Button>
-                <TextBlock x:ConnectionId='15' x:Name="CastMemberBio" TextWrapping="WrapWholeWords" Grid.Row="3" FontSize="20" HorizontalAlignment="Left" TextAlignment="Justify"></TextBlock>
+
+                <ScrollViewer Height="Auto" Width="Auto" 
+                  VerticalScrollBarVisibility="Auto" Grid.Row="3">
+                    <TextBlock x:ConnectionId='17' x:Name="CastMemberBio" TextWrapping="WrapWholeWords" Grid.Row="3" FontSize="15" HorizontalAlignment="Left" TextAlignment="Justify"></TextBlock>
+                </ScrollViewer>
+               
+                <TextBlock x:ConnectionId='16' x:Name="stars" TextWrapping="WrapWholeWords" Grid.Row="4" FontSize="20" HorizontalAlignment="Center"></TextBlock>
             </Grid>
             <Grid x:ConnectionId='6' x:Name="CastMemberRoleGrid" Grid.Row="0" Grid.Column="1">
                 <Grid Grid.Row="0" Grid.Column="2" Margin="0,0,60,0">
@@ -62,16 +66,21 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="6*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="4*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock x:ConnectionId='7' x:Name="CastMemberRole" Grid.Row="0" Grid.Column="0" TextWrapping="WrapWholeWords" FontSize="40" HorizontalAlignment="Center"></TextBlock>
-                    <TextBlock x:ConnectionId='8' x:Name="CastMemActiveFrom" TextWrapping="WrapWholeWords" FontSize="20" HorizontalAlignment="Center" Grid.Row="1"></TextBlock>
-                    <TextBlock x:ConnectionId='9' x:Name="CastMemRoleBio" TextWrapping="WrapWholeWords" FontSize="19" Grid.Row="2" TextAlignment="Justify"></TextBlock>
-                    <TextBlock TextWrapping="WrapWholeWords" FontSize="35" Grid.Row="3" TextAlignment="Center">Notable Scene:</TextBlock>
-                    <MediaPlayerElement x:ConnectionId='10' x:Name="NotableSceneVid" Grid.Row="4" Width="auto" AutoPlay="True" Margin="0,0,0,20" AreTransportControlsEnabled="True"/>
-
+                    <TextBlock x:ConnectionId='7' x:Name="CastMemberRole" Grid.Row="0" Grid.Column="0" TextWrapping="WrapWholeWords" FontSize="35" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock x:ConnectionId='8' x:Name="CastMemActiveFrom" TextWrapping="WrapWholeWords" FontSize="18" HorizontalAlignment="Center" Grid.Row="1"></TextBlock>
+                    <ScrollViewer Height="Auto" Width="Auto" 
+                  VerticalScrollBarVisibility="Auto" Grid.Row="2">
+                        <TextBlock x:ConnectionId='11' x:Name="CastMemRoleBio" TextWrapping="WrapWholeWords" FontSize="15" Grid.Row="2" TextAlignment="Justify"></TextBlock>
+                    </ScrollViewer>
+                    <ScrollViewer Height="Auto" Width="Auto" 
+                  VerticalScrollBarVisibility="Auto" Grid.Row="3">
+                        <TextBlock x:ConnectionId='10' x:Name="NotableVidDesc" TextWrapping="WrapWholeWords" FontSize="15" Grid.Row="3" TextAlignment="Justify"></TextBlock>
+                    </ScrollViewer>
+                    <MediaPlayerElement x:ConnectionId='9' x:Name="NotableSceneVid" Grid.Row="5" Width="auto" AutoPlay="True" Margin="0,0,0,20" AreTransportControlsEnabled="True"/>
                 </Grid>
             </Grid>
         </Grid>

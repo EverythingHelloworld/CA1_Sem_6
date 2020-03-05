@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Sem_6_CA1.Channels"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sem_6_CA1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--Main Page Grid-->
+    <Grid x:ConnectionId='2' x:Name="OuterGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <NavigationView x:ConnectionId='3' PaneDisplayMode="LeftCompact" SelectedItem="Home" x:Name="OptionsMenu" IsSettingsVisible="False"                                  >
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Home" />
+                <NavigationViewItem Icon="GoToStart" Content="Channels" Tag="Channels"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+
+        <!--Outer Grid for title bar and shows-->
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <!--title bar Grid-->
+            <Grid x:ConnectionId='4' x:Name="showsTitleBarGrid" Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--Dropdown-->
+                <ComboBox x:ConnectionId='10' x:Name="cbFilterByChannel" Width="Auto" Height="Auto" HorizontalAlignment="Center" Margin="50" SelectedItem="All" Grid.Row="0" Grid.Column="0"                                                       >
+                    <x:String>All</x:String>
+                    <x:String>ABC</x:String>
+                    <x:String>AMC</x:String>
+                    <x:String>BBC</x:String>
+                    <x:String>BBC America</x:String>
+                    <x:String>Freeform</x:String>
+                    <x:String>Netflix</x:String>
+                    <x:String>The CW</x:String>
+                    <x:String>NBC</x:String>
+                    <x:String>SyFy</x:String>
+                </ComboBox>
+
+                <!--Title-->
+                <TextBlock x:ConnectionId='11' x:Name="channelTitle" FontSize="50" HorizontalAlignment="Center" Margin="20" Grid.Row="0" Grid.Column="1">All</TextBlock>
+
+                <!--Radio Buttons-->
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:ConnectionId='12' Content="Sort by Rating" Tag="ratingSort" x:Name="rbSortByRating" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="0" FontSize="12"                                 />
+                    <RadioButton x:ConnectionId='13' Content="Sort by Year" Tag="yearSort" x:Name="rbSortByYear" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="1" FontSize="12"                               />
+                </Grid>
+               
+
+            </Grid>
+            <!--^Close title bar grid-->
+
+            <GridView x:ConnectionId='5' x:Name="showsGrid" Grid.Column="0" Grid.Row="1"                                              >
+                <GridView.ItemTemplate>
+                    <DataTemplate                           >
+                        <StackPanel x:ConnectionId='6' Margin="10" Width="Auto">
+                            <Image x:ConnectionId='7' Height="250" Width="400" Stretch="Fill"                                  >
+                                <ToolTipService.ToolTip>
+                                    <TextBlock>
+                                       <Run x:ConnectionId='8'                      />
+                                       <Run Text=" ("/>
+                                       <Run x:ConnectionId='9'                           />
+                                       <Run Text=")"/>
+                                    </TextBlock>
+                                </ToolTipService.ToolTip>
+                            </Image>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+    </Grid>
+</Page>
+

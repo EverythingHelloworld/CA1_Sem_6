@@ -53,3 +53,8 @@ C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\CastMemb
 C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\CastMemberDetails.g.cs
 C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\CastMemberDetails.xaml
 C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\CastMemberDetails.xbf
+C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\Channels.g.i.cs
+C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\Channels.g.cs
+C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\Channels.xaml
+C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\obj\x86\Debug\Channels.xbf
+C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Channels.xbf
