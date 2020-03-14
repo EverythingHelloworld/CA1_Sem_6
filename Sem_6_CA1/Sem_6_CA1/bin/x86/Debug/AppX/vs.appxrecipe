@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-05T15:21:35.238</Modified>
+      <Modified>2020-03-11T16:31:53.204</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Sem_6_CA1.exe">
       <PackagePath>entrypoint\Sem_6_CA1.exe</PackagePath>
-      <Modified>2020-03-05T15:21:33.502</Modified>
+      <Modified>2020-03-11T16:31:51.827</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -52,7 +52,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\aaron1.jpg">
       <PackagePath>Images\aaron1.jpg</PackagePath>
-      <Modified>2020-03-02T23:12:55.070</Modified>
+      <Modified>2020-03-08T21:09:57.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\aaron2.jpg">
       <PackagePath>Images\aaron2.jpg</PackagePath>
@@ -60,7 +60,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\aaron3.jpg">
       <PackagePath>Images\aaron3.jpg</PackagePath>
-      <Modified>2020-03-03T00:04:54.115</Modified>
+      <Modified>2020-03-08T20:59:41.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\alex.jpg">
       <PackagePath>Images\alex.jpg</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\amanda.jpg">
       <PackagePath>Images\amanda.jpg</PackagePath>
-      <Modified>2020-03-02T23:44:39.046</Modified>
+      <Modified>2020-03-08T21:16:45.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\andy.jpg">
       <PackagePath>Images\andy.jpg</PackagePath>
@@ -100,15 +100,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\chloe.jpg">
       <PackagePath>Images\chloe.jpg</PackagePath>
-      <Modified>2020-03-02T23:02:36.883</Modified>
+      <Modified>2020-03-08T21:01:38.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\david.jpg">
       <PackagePath>Images\david.jpg</PackagePath>
       <Modified>2020-03-03T00:05:31.687</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\dom.jpg">
-      <PackagePath>Images\dom.jpg</PackagePath>
-      <Modified>2020-03-02T23:42:49.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\elizabeth.jpg">
       <PackagePath>Images\elizabeth.jpg</PackagePath>
@@ -116,7 +112,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\emily.jpg">
       <PackagePath>Images\emily.jpg</PackagePath>
-      <Modified>2020-03-02T23:46:34.774</Modified>
+      <Modified>2020-03-08T21:21:57.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\iain.jpg">
       <PackagePath>Images\iain.jpg</PackagePath>
@@ -144,7 +140,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\mackenzie.jpg">
       <PackagePath>Images\mackenzie.jpg</PackagePath>
-      <Modified>2020-03-02T23:20:06.134</Modified>
+      <Modified>2020-03-08T21:00:43.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\maggie.jpg">
       <PackagePath>Images\maggie.jpg</PackagePath>
@@ -152,7 +148,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\matt.jpg">
       <PackagePath>Images\matt.jpg</PackagePath>
-      <Modified>2020-03-03T00:06:51.095</Modified>
+      <Modified>2020-03-08T21:03:20.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\melissa.jpg">
       <PackagePath>Images\melissa.jpg</PackagePath>
@@ -160,7 +156,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\nesta.jpg">
       <PackagePath>Images\nesta.jpg</PackagePath>
-      <Modified>2020-03-02T23:20:53.700</Modified>
+      <Modified>2020-03-08T21:04:32.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\nikita.jpg">
       <PackagePath>Images\nikita.jpg</PackagePath>
@@ -172,19 +168,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\penn.jpg">
       <PackagePath>Images\penn.jpg</PackagePath>
-      <Modified>2020-03-02T23:34:06.592</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\rachel.jpg">
-      <PackagePath>Images\rachel.jpg</PackagePath>
-      <Modified>2020-03-04T17:04:20.744</Modified>
+      <Modified>2020-03-08T20:57:33.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\reilly.jpg">
       <PackagePath>Images\reilly.jpg</PackagePath>
-      <Modified>2020-03-02T23:22:19.872</Modified>
+      <Modified>2020-03-08T21:05:34.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\sandra.jpg">
       <PackagePath>Images\sandra.jpg</PackagePath>
-      <Modified>2020-03-02T23:25:14.379</Modified>
+      <Modified>2020-03-08T21:24:48.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\sarah.jpg">
       <PackagePath>Images\sarah.jpg</PackagePath>
@@ -209,6 +201,10 @@
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\you.jpg">
       <PackagePath>Images\you.jpg</PackagePath>
       <Modified>2020-02-29T00:56:08.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\dom.png">
+      <PackagePath>Images\dom.png</PackagePath>
+      <Modified>2020-03-08T20:58:33.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\imdb.png">
       <PackagePath>Images\imdb.png</PackagePath>
@@ -252,6 +248,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-09-18T08:40:56.065</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\rachel.jfif">
+      <PackagePath>Images\rachel.jfif</PackagePath>
+      <Modified>2020-03-08T21:24:04.508</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-02-21T14:28:33.267</Modified>
@@ -266,11 +266,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\alison.mp4">
       <PackagePath>videos\alison.mp4</PackagePath>
-      <Modified>2020-03-04T12:05:55.965</Modified>
+      <Modified>2020-03-08T20:42:55.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\amy.mp4">
       <PackagePath>videos\amy.mp4</PackagePath>
-      <Modified>2020-03-04T12:26:23.737</Modified>
+      <Modified>2020-03-08T20:37:40.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\bill.mp4">
       <PackagePath>videos\bill.mp4</PackagePath>
@@ -290,7 +290,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\clary.mp4">
       <PackagePath>videos\clary.mp4</PackagePath>
-      <Modified>2020-03-04T12:58:42.300</Modified>
+      <Modified>2020-03-08T20:43:36.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\cole.mp4">
       <PackagePath>videos\cole.mp4</PackagePath>
@@ -302,7 +302,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\eve.mp4">
       <PackagePath>videos\eve.mp4</PackagePath>
-      <Modified>2020-03-04T11:19:50.051</Modified>
+      <Modified>2020-03-08T18:22:30.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\fitz.mp4">
       <PackagePath>videos\fitz.mp4</PackagePath>
@@ -318,7 +318,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\jake.mp4">
       <PackagePath>videos\jake.mp4</PackagePath>
-      <Modified>2020-03-04T12:21:31.592</Modified>
+      <Modified>2020-03-08T20:21:15.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\jennifer.mp4">
       <PackagePath>videos\jennifer.mp4</PackagePath>
@@ -336,6 +336,10 @@
       <PackagePath>videos\krystal.mp4</PackagePath>
       <Modified>2020-03-04T12:11:02.840</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\love.mp4">
+      <PackagePath>videos\love.mp4</PackagePath>
+      <Modified>2020-03-08T20:15:42.602</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\marcy.mp4">
       <PackagePath>videos\marcy.mp4</PackagePath>
       <Modified>2020-03-04T10:52:31.222</Modified>
@@ -346,7 +350,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\philip.mp4">
       <PackagePath>videos\philip.mp4</PackagePath>
-      <Modified>2020-03-04T10:39:29.850</Modified>
+      <Modified>2020-03-08T19:35:00.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\rachel.mp4">
       <PackagePath>videos\rachel.mp4</PackagePath>
@@ -378,27 +382,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Sem_6_CA1.xr.xml">
       <PackagePath>Sem_6_CA1.xr.xml</PackagePath>
-      <Modified>2020-03-05T14:43:29.692</Modified>
+      <Modified>2020-03-08T20:50:56.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-03-05T14:49:02.017</Modified>
+      <Modified>2020-03-11T16:31:51.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\CastMemberDetails.xbf">
       <PackagePath>CastMemberDetails.xbf</PackagePath>
-      <Modified>2020-03-05T15:21:32.935</Modified>
+      <Modified>2020-03-11T16:31:51.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Channels.xbf">
       <PackagePath>Channels.xbf</PackagePath>
-      <Modified>2020-03-05T14:49:02.020</Modified>
+      <Modified>2020-03-11T16:31:51.552</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-03-05T14:49:02.022</Modified>
+      <Modified>2020-03-11T16:31:51.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\ShowDetailsPage.xbf">
       <PackagePath>ShowDetailsPage.xbf</PackagePath>
-      <Modified>2020-03-05T14:49:02.023</Modified>
+      <Modified>2020-03-11T16:31:51.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -406,11 +410,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-03-05T13:27:28.594</Modified>
+      <Modified>2020-03-11T16:31:52.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\bin\x86\Debug\Core\Sem_6_CA1.exe">
       <PackagePath>Sem_6_CA1.exe</PackagePath>
-      <Modified>2020-03-05T15:21:35.173</Modified>
+      <Modified>2020-03-11T16:31:53.173</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

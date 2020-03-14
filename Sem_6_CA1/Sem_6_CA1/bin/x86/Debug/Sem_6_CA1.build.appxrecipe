@@ -79,9 +79,6 @@
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\david.jpg">
       <PackagePath>Images\david.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\dom.jpg">
-      <PackagePath>Images\dom.jpg</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\elizabeth.jpg">
       <PackagePath>Images\elizabeth.jpg</PackagePath>
     </AppxPackagedFile>
@@ -130,9 +127,6 @@
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\penn.jpg">
       <PackagePath>Images\penn.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\rachel.jpg">
-      <PackagePath>Images\rachel.jpg</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\reilly.jpg">
       <PackagePath>Images\reilly.jpg</PackagePath>
     </AppxPackagedFile>
@@ -156,6 +150,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\you.jpg">
       <PackagePath>Images\you.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\dom.png">
+      <PackagePath>Images\dom.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\imdb.png">
       <PackagePath>Images\imdb.png</PackagePath>
@@ -189,6 +186,9 @@
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Images\rachel.jfif">
+      <PackagePath>Images\rachel.jfif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -252,6 +252,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\krystal.mp4">
       <PackagePath>videos\krystal.mp4</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\love.mp4">
+      <PackagePath>videos\love.mp4</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Maria\source\repos\CA1_Sem_6\Sem_6_CA1\Sem_6_CA1\videos\marcy.mp4">
       <PackagePath>videos\marcy.mp4</PackagePath>

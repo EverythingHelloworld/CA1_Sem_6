@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="OuterGrid">
+    <Grid x:Name="OuterGrid" Background="Beige">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="8*"/>
@@ -67,6 +67,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
                         <RowDefinition Height="2*"/>
                         <RowDefinition Height="4*"/>
                     </Grid.RowDefinitions>
@@ -76,9 +77,10 @@
                   VerticalScrollBarVisibility="Auto" Grid.Row="2">
                         <TextBlock x:Name="CastMemRoleBio" TextWrapping="WrapWholeWords" FontSize="15" Grid.Row="2" TextAlignment="Justify"></TextBlock>
                     </ScrollViewer>
+                    <TextBlock TextWrapping="WrapWholeWords" FontSize="20" Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center">Notable Scene:</TextBlock>
                     <ScrollViewer Height="Auto" Width="Auto" 
-                  VerticalScrollBarVisibility="Auto" Grid.Row="3">
-                        <TextBlock x:Name="NotableVidDesc" TextWrapping="WrapWholeWords" FontSize="15" Grid.Row="3" TextAlignment="Justify"></TextBlock>
+                  VerticalScrollBarVisibility="Auto" Grid.Row="4">
+                        <TextBlock x:Name="NotableVidDesc" TextWrapping="WrapWholeWords" FontSize="15" Grid.Row="4" TextAlignment="Justify"></TextBlock>
                     </ScrollViewer>
                     <MediaPlayerElement x:Name="NotableSceneVid" Grid.Row="5" Width="auto" AutoPlay="True" Margin="0,0,0,20" AreTransportControlsEnabled="True"/>
                 </Grid>

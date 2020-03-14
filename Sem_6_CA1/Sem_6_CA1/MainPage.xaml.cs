@@ -411,7 +411,7 @@ namespace Sem_6_CA1
                "Maslany rose to fame for her starring role in Orphan Black where she plays 15+ clones with completely " +
                "different personalities and quirks. Her main roles on the series include Sarah Manning - a streetwise con " +
                "artist, Beth Childs - a police officer, Cosima Niehaus - a scientist, Alison Hendrix - a suburban housewife " +
-               "and Helena - a psychotic killer. ", 5, "https://www.imdb.com/name/nm1137209/?ref_=tt_ov_st_sm", "ms-appx:///Images/rachel.jpg");
+               "and Helena - a psychotic killer. ", 5, "https://www.imdb.com/name/nm1137209/?ref_=tt_ov_st_sm", "ms-appx:///Images/rachel.jfif");
 
             List<CastMember> castMembersOB = new List<CastMember>();
 
@@ -454,7 +454,7 @@ namespace Sem_6_CA1
             "Live (1968).", 1,
             "https://www.imdb.com/name/nm0303073/?ref_=tt_cl_t4", "ms-appx:///Images/melissa.jpg");
 
-                CastMember stephanie = new CastMember(new Name("Stephanie", "Beatriz"), new DateTime(1982, 08, 19), amy,
+                CastMember stephanie = new CastMember(new Name("Stephanie", "Beatriz"), new DateTime(1982, 08, 19), rosa,
             "Stephanie Beatriz was born as Stephanie Beatriz Bischoff Alvizuri. She is an actress, known for Short " +
             "Term 12 (2013), Brooklyn Nine-Nine (2013) and The Lego Movie 2: The Second Part (2019). She has been " +
             "married to Brad Hoss since October 6, 2018. ", 5,
@@ -481,7 +481,7 @@ namespace Sem_6_CA1
             CastRole love = new CastRole("Love Quinn", "2019-", "Love is an 'artistic' aspiring chef in LA working as a produce manager " +
                 "in a high-end grocery store, and she's not interested in social media or branding and much more into leading an interesting " +
                 "life. She is fiercely independent. Love is in grief when she meets Joe, and can sense he too has known life - changing loss.", 
-                "ms-appx:///videos/love.mp4", "\nIn the following scene, Victoria's character love ");
+                "ms-appx:///videos/love.mp4", "\nIn the following scene, Victoria's character love persuades Joe to try nearby restaurants with her.");
             CastRole forty = new CastRole("Forty Quinn", "2019", "Forty Quinn is a main character in the television series You. He's confident, " +
                 "opinionated, and privileged, a charming bully or a razor-sharp bully. He's working through a 12-step program, relying on his sister " +
                 "for support and attention.", "ms-appx:///videos/forty.mp4", "\nIn the following scene, James' character Forty pitches an idea to Joe");
@@ -574,7 +574,7 @@ namespace Sem_6_CA1
                 "Shadowhunter who was raised among mundanes, unaware of her true heritage. Clary's simple and content life was disrupted " +
                 "when her mother was kidnapped, forcing her into action. Led on a journey of self-discovery in the dangerous and magical " +
                 "Shadow World, the secrets of her past were revealed as she begins to embrace her newfound powers.", "ms-appx:///videos/clary.mp4", 
-                "\n\nIn the following scene, Clary receives advice from her surrogate Father Luke on her new life as a Shadowhunter.");
+                "\n\nIn the following scene, Clary shows Luke the weapon she chose.");
             CastRole jace = new CastRole("Jace Lightwood", "2016-2019", "Jace Herondale, previously and widely known as Jace Wayland, is a " +
                 "lethal and expert Shadowhunter—a skilled soldier in their war against demons.", "ms-appx:///videos/jace.mp4", "\nIn the following " +
                 "scene, Dominic's character Jace teaches Simon how to fight.");
@@ -596,7 +596,7 @@ namespace Sem_6_CA1
             "Actor Dominic Anthony Sherwood was born in Kent, South East England. After studying Drama and Theater " +
             "Studies at schools in Maidstone, he left to work abroad starting in Kenya and moving for 6 months before " +
             "returning to London. ", 1,
-            "https://www.imdb.com/name/nm8510480/?ref_=tt_cl_t8", "ms-appx:///Images/dom.jpg");
+            "https://www.imdb.com/name/nm8510480/?ref_=tt_cl_t8", "ms-appx:///Images/dom.png");
 
             List<CastMember> castMembersSH = new List<CastMember>();
 
@@ -606,7 +606,7 @@ namespace Sem_6_CA1
 
             shadowhunters = new TV_Show("Shadowhunters", "ms-appx:///Images/sh.jpg", "2016", "Sci-Fi", "Freeform", "Ended",
             "After her mother disappears, Clary must venture into the dark world of demon " +
-            "hunting, and embrace her new role among the Shadowhunters.", 3, "https://www.youtube.com/watch?v=nA6nGwUwLt4", castMembersSH);
+            "hunting, and embrace her new role among the Shadowhunters.", 3, "https://www.youtube.com/watch?v=aWIM7igneuk", castMembersSH);
 
             //12 Monkeys
 

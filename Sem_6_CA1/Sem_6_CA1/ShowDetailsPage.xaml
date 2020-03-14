@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!--Main Page Grid-->
-    <Grid x:Name="OuterGrid">
+    <Grid x:Name="OuterGrid" Background="Beige">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="8*"/>

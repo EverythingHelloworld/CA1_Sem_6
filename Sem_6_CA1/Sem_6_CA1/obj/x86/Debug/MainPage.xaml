@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!--Main Page Grid-->
-    <Grid x:ConnectionId='2' x:Name="OuterGrid">
+    <Grid x:ConnectionId='2' x:Name="OuterGrid" Background="Beige">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="8*"/>
@@ -61,8 +61,8 @@
                 <TextBlock FontSize="35" HorizontalAlignment="Center" Margin="20" Grid.Row="0" Grid.Column="1" Width="Auto" Height="Auto">Tv Series</TextBlock>
 
                 <!--Radio Buttons-->
-                <RadioButton x:ConnectionId='11' Width="Auto" Height="Auto" Content="Sort by Rating" Tag="ratingSort" x:Name="rbSortByRating" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="3" FontSize="12"                                 />
-                <RadioButton x:ConnectionId='12' Width="Auto" Height="Auto" Content="Sort by Year" Tag="yearSort" x:Name="rbSortByYear" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="2" FontSize="12"                               />
+                <RadioButton x:ConnectionId='11' Width="Auto" Height="Auto" Content="Rating" Tag="ratingSort" x:Name="rbSortByRating" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="3" FontSize="12"                                 />
+                <RadioButton x:ConnectionId='12' Width="Auto" Height="Auto" Content="Year" Tag="yearSort" x:Name="rbSortByYear" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50" Grid.Row="0" Grid.Column="2" FontSize="12"                               />
 
             </Grid>
             <!--^Close title bar grid-->
